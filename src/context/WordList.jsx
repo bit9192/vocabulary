@@ -8,9 +8,9 @@ import {
 
 import VOCABULARY_LIST from '../words/vocabulary.json'
 
-import {
-    shuffleArray
-} from '../tools'
+// import {
+//     shuffleArray
+// } from '../tools'
 
 let _ALL_ = null
 async function Init() {
@@ -72,11 +72,17 @@ export const useAllList = () => useContext(Context)
 
 
 function useWordAll() {
+    const [loading, setLoad] = useState(true)
     const [wAll, setAll] = useState([])
     useEffect(() => {
-        Init().then(v => setAll(v.wordAll))
+        setLoad(true)
+        Init().then(v => {
+            setLoad(false)
+            setAll(v.wordAll)
+        })
     }, [])
     return {
+        loading,
         all: wAll
     }
 }

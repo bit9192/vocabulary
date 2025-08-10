@@ -14,6 +14,11 @@ import {
     useWordExecute
 } from '../hook/useYoug'
 
+import {
+    useAllList
+} from '../context/WordList'
+
+
 import { useMemo, useState, useEffect, useRef } from 'react';
 
 function WordsLearning() {
@@ -144,7 +149,12 @@ function WordsLearning() {
 
 }
 
-export default WordsLearning
+function WordsWrap() {
+    const {loading} = useAllList()
+    return loading ? <div>loading</div> : <WordsLearning />
+}
+
+export default WordsWrap
 
 
 const WordsBlock = styled('div')`
