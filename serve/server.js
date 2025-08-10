@@ -8,8 +8,7 @@ const app = new Hono()
 app.use('*', cors())  // 允许跨域
 
 app.get('/api/wordList', async (c) => {
-  const db = await InitDB()
-  console.log(db.data)
+  const db = await InitDBOnce()
   return c.json(db.data.words)
 })
 
