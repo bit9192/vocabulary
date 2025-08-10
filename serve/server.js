@@ -27,6 +27,7 @@ app.get('/api/recent', async (c) => {
         const wrongTimes = v.studyState !== 1 ? 1 : 0
         const rightTimes = wrongTimes === 1 ? 0 : 1
         words[word] = {
+          word,
           learnTimes: v.passTime,
           wrongTimes,
           rightTimes,
@@ -52,7 +53,6 @@ app.get('/api/recent', async (c) => {
 
 app.post('/api/add', async (c) => {
   const body = await c.req.json()
-  console.log(body)
   const newItem = { id: Date.now(), ...body }
   const db = await InitDBOnce()
   const [err] = AddHistory(newItem)

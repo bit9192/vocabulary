@@ -35,6 +35,7 @@ export function SetWord(wordObject) {
   else {
     db.data.words[word].rightTimes += 1
   }
+  // db.data.words[word].lastTimestamp = wordObject.endedAt === -1 ? new Date() * 1 : wordObject.endedAt
   db.data.words[word].lastTimestamp = wordObject.endedAt
 }
 

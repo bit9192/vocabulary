@@ -1,4 +1,4 @@
-import {useEffect, useState, useRef, useMemo, use} from 'react';
+import {useEffect, useState, useRef} from 'react';
 
 import {
     getVocabularyByIndex
@@ -17,7 +17,15 @@ import {
     CreateLesson
 } from "../storage/cache"
 
-import {post} from '../api'
+import {
+    AddLesson,
+    GetRecent,
+    GetAll
+} from '../api/api'
+
+import {
+    GetAllCache
+} from '../context/WordList'
 
 async function loadWidget(id = "widget-1") {
     const _on = {
@@ -53,10 +61,10 @@ async function loadWidget(id = "widget-1") {
     })
 }
 
-function GetWordList(r) {
+function GetWordList(r, n) {
     let defaultIndex = 0
     const list = shuffleArray(
-        getVocabularyByIndex(r)
+        GetAllCache(r.map(v => v*1), n)
     )
 
     const nextWord = () => {
@@ -95,6 +103,7 @@ function GetWordList(r) {
 }
 
 export function useWordExecute() {
+
     const [searchParams] = useSearchParams()
     // 0 loading | -1 pause | 1 done
     const [loading, setLoading] = useState(0)
@@ -103,6 +112,7 @@ export function useWordExecute() {
     
     const widgetRef = useRef(null)
     const pageR = searchParams.get('r')
+    const pageN = searchParams.get('n')
 
     useEffect(() => {
         const init = async () => {
@@ -120,13 +130,11 @@ export function useWordExecute() {
                 preWord,
                 nextWord,
                 setWord: setWordByList
-            } = GetWordList(pageR.split('_'))
+            } = GetWordList(pageR.split('_'), pageN)
+            setList(list)
             // init list 
             let _lesson = CreateLesson(pageR)
-            // passOne,
-            // done,
-            // show,
-            // word
+            
             let _loading = false
             widgetRef.current.widget.on('onFetchDone', (event) => {
                 let _word_ = event.query
@@ -145,7 +153,7 @@ export function useWordExecute() {
                 setLoading(load)
             })
 
-            setList(list)
+            
 
             const getWords = (word, language = "english") => {
                 widgetRef.current.widget.fetch(word, language)
@@ -182,15 +190,16 @@ export function useWordExecute() {
                     getWords(nextWord())
                 },
                 done() {
-                    console.log(_lesson.show())
-                    post('/api/add', _lesson.show()).then(e => {
+                    setLoading(0)
+                    AddLesson(_lesson.show()).then(e => {
+                        setLoading(1)
                         console.log(e)
                     })
                 }
             }
         }
         init()
-    }, [pageR])
+    }, [pageR, pageN])
 
     return {
         loading,

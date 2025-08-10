@@ -8,6 +8,7 @@ import {
   // useHistory
 } from "react-router-dom";
 
+import WordAllContext from './context/WordList'
 
 import Words from './pages/Learning'
 import VocabularyList from './pages/VocabularyList'
@@ -36,16 +37,18 @@ function App() {
   // )
   return (
     <div className="App">
-      <Router>
-        <Routes>
-          {
-            router.map(v => {
-              const {child, ...other} = v
-              return <Route key={other.title} {...other}/>
-            })
-          }
-        </Routes>
-      </Router>
+      <WordAllContext>
+        <Router>
+          <Routes>
+            {
+              router.map(v => {
+                const {child, ...other} = v
+                return <Route key={other.title} {...other}/>
+              })
+            }
+          </Routes>
+        </Router>
+      </WordAllContext>
       {/* <YougLish /> */}
       {/* <YouTo /> */}
       {/* <Words /> */}

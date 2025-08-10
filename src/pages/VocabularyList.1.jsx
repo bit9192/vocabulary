@@ -17,30 +17,22 @@ import {
     useNavigate
 } from "react-router-dom"
 
-
-import {
-    useAllList
-} from '../context/WordList'
-
-    
+//   
 function List() {
     const go = useNavigate()
     // console.log(go)
-    const list = useAllList()
-    console.log(
-        list
-    )
+    const list = useList()
     return (
         <Container>
             <TextL>Choose one group then the system will randomly combined anther group to give you a study plan.</TextL>
             <WhiteSpace />
             <FlexDiv flow='wrap' justify='start'>
                 {
-                    list.all.map((v,i) =>
-                        <VocabularyBlock key={v[0].word} onClick={() => {
+                    list.map((v,i) =>
+                        <VocabularyBlock key={v[0]} onClick={() => {
                             go('/learn?r='+getRandomIndex(i).join('_'))
                         }}>
-                            <TextM>{i+1}. {v[0].word.slice(0,5)} ...</TextM>
+                            <TextM>{i+1}. {v[0].slice(0,5)} ...</TextM>
                             <br />
                             <TextM style={{color: 'rgb(143 143 143)'}}>w: {v.length}</TextM>
                         </VocabularyBlock>

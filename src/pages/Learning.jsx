@@ -14,9 +14,6 @@ import {
     useWordExecute
 } from '../hook/useYoug'
 
-
-
-
 import { useMemo, useState, useEffect, useRef } from 'react';
 
 function WordsLearning() {

@@ -1,0 +1,95 @@
+import { useState, createContext, useContext, useEffect } from 'react'
+
+import {
+    AddLesson,
+    GetRecent,
+    GetAll
+} from '../api/api'
+
+import VOCABULARY_LIST from '../words/vocabulary.json'
+
+import {
+    shuffleArray
+} from '../tools'
+
+let _ALL_ = null
+async function Init() {
+    const wordList = await GetAll()
+    const words = VOCABULARY_LIST.map(list => {
+        return list.map(word => {
+            if (!wordList[word]) {
+                return {
+                    word,
+                    lastTimestamp: -1,
+                    learnTimes: 0,
+                    rightTimes: 0,
+                    wrongTimes: 0
+                }
+            }
+            return {
+                word,
+                ...wordList[word]
+            }
+        })
+    })
+    _ALL_ = words
+    return {
+        wordAll: words
+    }
+}
+
+// lessons = [12,34] , newNum = 20
+export const GetAllCache = (lessons, newNum = 0) => {
+    if (!_ALL_) return []
+    let words = []
+    let _newW = []
+    _ALL_.forEach((w,i) => {
+        if (lessons.includes(i)) {
+            words.push(...w.map(v => v.word))
+        }
+        else {
+            _newW.push(...w)
+        }
+    })
+
+    words.push(
+        ..._newW.sort((x, y) => {
+            if (x.a !== y.a) {
+                return x.rightTimes - y.rightTimes
+            }
+            return x.learnTimes - y.learnTimes
+        }).slice(0, newNum).map(v => v.word)
+    )
+    return words
+}
+
+
+
+export const Context = createContext({
+    list: []
+})
+export const useAllList = () => useContext(Context)
+
+
+function useWordAll() {
+    const [wAll, setAll] = useState([])
+    useEffect(() => {
+        Init().then(v => setAll(v.wordAll))
+    }, [])
+    return {
+        all: wAll
+    }
+}
+
+function WordAllContext({children}) {
+    const p = useWordAll()
+    return (
+        <Context.Provider
+            value={p}
+        >
+            {children}
+        </Context.Provider>
+    )
+}
+
+export default WordAllContext

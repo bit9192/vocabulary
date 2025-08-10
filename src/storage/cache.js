@@ -25,6 +25,27 @@ export function CreateWordHistory(word) {
     }
 }
 
+export const LESSON_TYPE = {
+    beginAt: 0,
+    title: null,
+    list:[]
+}
+
+export const WORD_TYPE = {
+    word: null,
+    beginAt: -1,
+    endedAt: -1,
+    passTime: 0,
+    studyState: -1
+}
+
+export function InitWord(word) {
+    return {
+        ...WORD_TYPE,
+        word
+    }
+}
+
 export function CreateLesson(title) {
     const timestamp = new Date()  * 1
     let _LESSON_ = {
@@ -39,14 +60,8 @@ export function CreateLesson(title) {
         if (!word) throw new Error("add word invalid")
         let _word_ = _LESSON_.list.find(v => v.word === word)
         if (!_word_){
-            const timestamp = new Date()  * 1
-            _word_ = {
-                word,
-                beginAt: timestamp,
-                endedAt: -1,
-                passTime: 0,
-                studyState: -1 // -1 learing , 0 didn't recognize, 1 recognized  
-            }
+            _word_ = InitWord(word)
+            _word_.beginAt = new Date()  * 1
             _LESSON_.list.push(_word_)
         }
         return _word_
@@ -65,6 +80,11 @@ export function CreateLesson(title) {
     }
     
     function show() {
+        const now = new Date() * 1
+        const filter = _LESSON_.list.filter(v => v.beginAt === -1)
+        filter.forEach(v => {
+            v.beginAt = now
+        })
         return _LESSON_
     }
 
