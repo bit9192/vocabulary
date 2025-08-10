@@ -52,13 +52,22 @@ export const GetAllCache = (lessons, newNum = 0) => {
         }
     })
 
+    _newW = _newW.sort((x, y) => {
+        if (x.rightTimes !== y.rightTimes) {
+            return x.rightTimes - y.rightTimes
+        }
+        if (x.wrongTimes !== y.wrongTimes) {
+            return y.wrongTimes - x.wrongTimes
+        }
+        // if (x.wrongTimes !== y.wrongTimes) {
+        //     return y.wrongTimes - x.wrongTimes
+        // }
+        return x.learnTimes - y.learnTimes
+    })
+
+    console.log(_newW)
     words.push(
-        ..._newW.sort((x, y) => {
-            if (x.a !== y.a) {
-                return x.rightTimes - y.rightTimes
-            }
-            return x.learnTimes - y.learnTimes
-        }).slice(0, newNum).map(v => v.word)
+        ..._newW.slice(0, newNum).map(v => v.word)
     )
     return words
 }
