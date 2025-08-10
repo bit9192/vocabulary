@@ -1,6 +1,6 @@
 // db.js
 import { Low } from 'lowdb'
-import { JSONFile } from 'lowdb/node'
+import { JSONFile, JSONFilePreset } from 'lowdb/node'
 
 const _INIT_ = {
   words: {},
@@ -10,11 +10,14 @@ const _INIT_ = {
 const _WORD_ = {
   learnTimes: 0,
   wrongTimes: 0,
+  rightTimes: 0,
   lastTimestamp: 0
 }
 
-const adapter = new JSONFile('./db.json')
-const db = new Low(adapter, _INIT_)
+// const adapter = new JSONFile('./db.json', {})
+// const db = new Low(adapter, _INIT_)
+const db = await JSONFilePreset('./db.json', _INIT_)
+// await db.read()
 
 function InitWord(word) {
   if (!db.data.words[word]) {
@@ -29,14 +32,20 @@ export function SetWord(wordObject) {
   if (wordObject.studyState < 1) {
     db.data.words[word].wrongTimes += 1
   }
+  else {
+    db.data.words[word].rightTimes += 1
+  }
   db.data.words[word].lastTimestamp = wordObject.endedAt
 }
 
 export function AddHistory(lesson) {
+  const beginAt = lesson.beginAt
+  if (db.data.history.findIndex(v => v.beginAt === beginAt) >= 0) return ["repeat", null]
   lesson.list.forEach(v => {
     SetWord(v)
   })
   db.data.history.push(lesson)
+  return [null, 0]
 }
 
 export async function InitDB() {
@@ -46,7 +55,7 @@ export async function InitDB() {
 }
 
 let _inited;
-export async function  InitDBOnce() {
+export async function InitDBOnce() {
   if (!_inited) {
     _inited = true
     await db.read()

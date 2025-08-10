@@ -102,7 +102,6 @@ export function useWordExecute() {
     const [wordList, setList] = useState([])
     
     const widgetRef = useRef(null)
-
     const pageR = searchParams.get('r')
 
     useEffect(() => {
@@ -110,73 +109,83 @@ export function useWordExecute() {
             if (!widgetRef.current) {
                 const widget = await loadWidget()
                 setLoading(1)
-                widget.on('onFetchDone', (event) => {
-                    setWord(event.query)
-                })
-                
-                widget.on('onPlayerStateChange', (event) => {
-                    const state = {
-                        1: 1,
-                        2: -1
-                    }
-                    setLoading(state[event.state] || 0)
-                })
                 widgetRef.current = {
                     widget
                 }
             }
-            
+
             const {
                 list,
                 getWord,
                 preWord,
-                nextWord
+                nextWord,
+                setWord: setWordByList
             } = GetWordList(pageR.split('_'))
+            // init list 
+            let _lesson = CreateLesson(pageR)
+            // passOne,
+            // done,
+            // show,
+            // word
+            let _loading = false
+            widgetRef.current.widget.on('onFetchDone', (event) => {
+                let _word_ = event.query
+                _lesson.passOne(_word_)
+                setWordByList(_word_)
+                setWord(_word_)
+            })
+            
+            widgetRef.current.widget.on('onPlayerStateChange', (event) => {
+                const state = {
+                    1: 1,
+                    2: -1
+                }
+                const load = state[event.state] || 0
+                _loading = load === 0
+                setLoading(load)
+            })
 
             setList(list)
 
-            let _lesson = CreateLesson(pageR)
-            
             const getWords = (word, language = "english") => {
                 widgetRef.current.widget.fetch(word, language)
             }
 
-            let _word;
             widgetRef.current.act = {
                 go: () => {
-                    console.log(131312)
+                    if (_loading) return
                     const word = getWord()
-                    console.log(word, ' go')
-                    _word = CreateWordHistory(word)
                     getWords(word)
                 },
                 play: () => {
-                    console.log(widgetRef)
                     widgetRef.current.widget.play()
                 },
                 pause: widgetRef.current.widget.pause,
                 replay: widgetRef.current.widget.replay,
                 next: () => {
+                    if (_loading) return
                     widgetRef.current.widget.next()
-                    _word.passOne()
+                    _lesson.passOne()
                 },
                 prev: widgetRef.current.widget.prev,
                 getWords: word => {
-                    setWord(word)
+                    if (_loading) return
                     getWords(word)
-                    _word = CreateWordHistory(word)
                 },
                 previousWord: () => {
+                    if (_loading) return
                     getWords(preWord())
                 },
                 nextWord: (state) => {
-                    _word.done(state)
-                    _lesson.add(_word.show())
+                    if (_loading) return
+                    _lesson.done(state)
                     getWords(nextWord())
-                    _word = CreateWordHistory(getWord())
                 },
                 done() {
-                    post('/api/add', _lesson.show())
+                    console.log(_lesson.show())
+                    post('/api/add', _lesson.show()).then(e => {
+                        console.log(e)
+                    })
                 }
             }
         }
