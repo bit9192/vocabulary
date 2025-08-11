@@ -9,6 +9,7 @@ import {
 } from "react-router-dom";
 
 import WordAllContext from './context/WordList'
+import WordRoot from './pages/WordRoot'
 
 import Words from './pages/Learning'
 import VocabularyList from './pages/VocabularyList'
@@ -25,6 +26,12 @@ const router = [
     path: '/learn',
     exact: true,
     element: <Words />
+  },
+   {
+    title: 'root',
+    path: '/root',
+    exact: true,
+    element: <WordRoot />
   }
 ]
 // import YouTo from './YouTo';
