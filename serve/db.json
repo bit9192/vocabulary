@@ -7,10 +7,10 @@
       "lastTimestamp": 1754667358886
     },
     "profound": {
-      "learnTimes": 2,
-      "wrongTimes": 2,
+      "learnTimes": 12,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1754667361669
+      "lastTimestamp": 1754870582849
     },
     "underneath": {
       "learnTimes": 6,
@@ -19,10 +19,10 @@
       "lastTimestamp": 1754701156779
     },
     "complaint": {
-      "learnTimes": 12,
-      "wrongTimes": 2,
+      "learnTimes": 17,
+      "wrongTimes": 3,
       "rightTimes": 1,
-      "lastTimestamp": 1754808410252
+      "lastTimestamp": 1754870413322
     },
     "grasp": {
       "learnTimes": 2,
@@ -31,28 +31,28 @@
       "lastTimestamp": 1754698889147
     },
     "chin": {
-      "learnTimes": 11,
+      "learnTimes": 16,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1754808779256
+      "rightTimes": 3,
+      "lastTimestamp": 1754872055756
     },
     "expedition": {
-      "learnTimes": 19,
-      "wrongTimes": 2,
+      "learnTimes": 27,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1754809058601
+      "lastTimestamp": 1754873183649
     },
     "criticize": {
-      "learnTimes": 5,
-      "wrongTimes": 1,
+      "learnTimes": 8,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754699071298
+      "lastTimestamp": 1754872491247
     },
     "tremendous": {
-      "learnTimes": 3,
+      "learnTimes": 8,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754699110316
+      "rightTimes": 1,
+      "lastTimestamp": 1754872771710
     },
     "district": {
       "learnTimes": 7,
@@ -67,10 +67,10 @@
       "lastTimestamp": 1754699237918
     },
     "enthusiastic": {
-      "learnTimes": 20,
+      "learnTimes": 27,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1754807854167
+      "rightTimes": 1,
+      "lastTimestamp": 1754871586829
     },
     "signal": {
       "learnTimes": 1,
@@ -121,22 +121,22 @@
       "lastTimestamp": 1754699670961
     },
     "bulletin": {
-      "learnTimes": 12,
-      "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754699796789
-    },
-    "ambitious": {
-      "learnTimes": 8,
-      "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1754808741434
-    },
-    "mutual": {
-      "learnTimes": 11,
+      "learnTimes": 24,
       "wrongTimes": 1,
       "rightTimes": 1,
-      "lastTimestamp": 1754809648653
+      "lastTimestamp": 1754872706925
+    },
+    "ambitious": {
+      "learnTimes": 14,
+      "wrongTimes": 3,
+      "rightTimes": 0,
+      "lastTimestamp": 1754872237372
+    },
+    "mutual": {
+      "learnTimes": 18,
+      "wrongTimes": 1,
+      "rightTimes": 2,
+      "lastTimestamp": 1754874027243
     },
     "tap": {
       "learnTimes": 6,
@@ -169,10 +169,10 @@
       "lastTimestamp": 1754700172115
     },
     "horizon": {
-      "learnTimes": 18,
+      "learnTimes": 29,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1754809200317
+      "rightTimes": 2,
+      "lastTimestamp": 1754871808294
     },
     "bet": {
       "learnTimes": 1,
@@ -199,16 +199,16 @@
       "lastTimestamp": 1754700380076
     },
     "abandon": {
-      "learnTimes": 9,
+      "learnTimes": 16,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1754810561687
+      "rightTimes": 2,
+      "lastTimestamp": 1754873446826
     },
     "veterinarian": {
-      "learnTimes": 20,
-      "wrongTimes": 2,
+      "learnTimes": 30,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1754809331601
+      "lastTimestamp": 1754872926749
     },
     "bump": {
       "learnTimes": 6,
@@ -223,16 +223,16 @@
       "lastTimestamp": 1754700640052
     },
     "deaf": {
-      "learnTimes": 11,
+      "learnTimes": 12,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1754809112964
+      "rightTimes": 3,
+      "lastTimestamp": 1754870663028
     },
     "leisure": {
-      "learnTimes": 2,
+      "learnTimes": 8,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754700691886
+      "rightTimes": 1,
+      "lastTimestamp": 1754872815567
     },
     "mechanic": {
       "learnTimes": 3,
@@ -247,10 +247,10 @@
       "lastTimestamp": 1754700738694
     },
     "wool": {
-      "learnTimes": 6,
+      "learnTimes": 11,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754700791104
+      "rightTimes": 1,
+      "lastTimestamp": 1754871023461
     },
     "execute": {
       "learnTimes": 4,
@@ -295,16 +295,16 @@
       "lastTimestamp": 1754701118573
     },
     "senses": {
-      "learnTimes": 9,
+      "learnTimes": 12,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1754808940321
+      "rightTimes": 3,
+      "lastTimestamp": 1754873671368
     },
     "rear": {
-      "learnTimes": 14,
-      "wrongTimes": 1,
+      "learnTimes": 20,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754701297735
+      "lastTimestamp": 1754870650628
     },
     "refresh": {
       "learnTimes": 6,
@@ -313,16 +313,16 @@
       "lastTimestamp": 1754701378626
     },
     "refuge": {
-      "learnTimes": 24,
+      "learnTimes": 30,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1754807676266
+      "rightTimes": 1,
+      "lastTimestamp": 1754872618313
     },
     "pulse": {
-      "learnTimes": 7,
-      "wrongTimes": 1,
+      "learnTimes": 14,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754701594735
+      "lastTimestamp": 1754870862096
     },
     "decay": {
       "learnTimes": 5,
@@ -349,10 +349,10 @@
       "lastTimestamp": 1754701824516
     },
     "brilliant": {
-      "learnTimes": 24,
+      "learnTimes": 30,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1754809453093
+      "rightTimes": 2,
+      "lastTimestamp": 1754873879969
     },
     "bloom": {
       "learnTimes": 2,
@@ -373,22 +373,22 @@
       "lastTimestamp": 1754702029298
     },
     "mayor": {
-      "learnTimes": 10,
-      "wrongTimes": 0,
+      "learnTimes": 19,
+      "wrongTimes": 1,
       "rightTimes": 2,
-      "lastTimestamp": 1754808264828
+      "lastTimestamp": 1754873268426
     },
     "whistle": {
-      "learnTimes": 2,
-      "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754702111185
-    },
-    "bay": {
-      "learnTimes": 13,
+      "learnTimes": 6,
       "wrongTimes": 1,
       "rightTimes": 1,
-      "lastTimestamp": 1754810118365
+      "lastTimestamp": 1754873938554
+    },
+    "bay": {
+      "learnTimes": 16,
+      "wrongTimes": 1,
+      "rightTimes": 2,
+      "lastTimestamp": 1754871637549
     },
     "worm": {
       "learnTimes": 4,
@@ -397,10 +397,10 @@
       "lastTimestamp": 1754702231082
     },
     "bark": {
-      "learnTimes": 16,
-      "wrongTimes": 2,
+      "learnTimes": 24,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1754808678631
+      "lastTimestamp": 1754873784179
     },
     "disgrace": {
       "learnTimes": 3,
@@ -439,16 +439,16 @@
       "lastTimestamp": 1754807748677
     },
     "topic": {
-      "learnTimes": 8,
+      "learnTimes": 14,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754807932737
+      "rightTimes": 1,
+      "lastTimestamp": 1754873406007
     },
     "whether": {
-      "learnTimes": 12,
+      "learnTimes": 23,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754808035225
+      "rightTimes": 1,
+      "lastTimestamp": 1754874177282
     },
     "discourage": {
       "learnTimes": 6,
@@ -493,10 +493,10 @@
       "lastTimestamp": 1754808347546
     },
     "comprehend": {
-      "learnTimes": 8,
-      "wrongTimes": 1,
+      "learnTimes": 15,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754808509848
+      "lastTimestamp": 1754873552328
     },
     "solve": {
       "learnTimes": 8,
@@ -511,16 +511,16 @@
       "lastTimestamp": 1754808613602
     },
     "sled": {
-      "learnTimes": 12,
+      "learnTimes": 17,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754808863060
+      "rightTimes": 1,
+      "lastTimestamp": 1754872524005
     },
     "elbow": {
-      "learnTimes": 6,
-      "wrongTimes": 1,
+      "learnTimes": 12,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754808897959
+      "lastTimestamp": 1754873740851
     },
     "sensation": {
       "learnTimes": 2,
@@ -535,10 +535,10 @@
       "lastTimestamp": 1754809262566
     },
     "irritate": {
-      "learnTimes": 5,
-      "wrongTimes": 1,
+      "learnTimes": 15,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754809370177
+      "lastTimestamp": 1754872405348
     },
     "offense": {
       "learnTimes": 3,
@@ -565,10 +565,10 @@
       "lastTimestamp": 1754809614250
     },
     "appropriate": {
-      "learnTimes": 12,
-      "wrongTimes": 1,
+      "learnTimes": 22,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754809737897
+      "lastTimestamp": 1754872149957
     },
     "offend": {
       "learnTimes": 2,
@@ -595,10 +595,10 @@
       "lastTimestamp": 1754809860917
     },
     "deceive": {
-      "learnTimes": 9,
+      "learnTimes": 18,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754810050826
+      "rightTimes": 1,
+      "lastTimestamp": 1754872459331
     },
     "overlook": {
       "learnTimes": 1,
@@ -613,16 +613,16 @@
       "lastTimestamp": 1754810182859
     },
     "valentine": {
-      "learnTimes": 7,
-      "wrongTimes": 1,
+      "learnTimes": 12,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1754810290913
+      "lastTimestamp": 1754870750013
     },
     "several": {
-      "learnTimes": 5,
+      "learnTimes": 13,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754810322728
+      "rightTimes": 1,
+      "lastTimestamp": 1754871382710
     },
     "newcomer": {
       "learnTimes": 4,
@@ -679,10 +679,10 @@
       "lastTimestamp": 1754810799333
     },
     "ridiculous": {
-      "learnTimes": 7,
+      "learnTimes": 11,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754810847614
+      "rightTimes": 1,
+      "lastTimestamp": 1754873356399
     },
     "suppose": {
       "learnTimes": 5,
@@ -703,10 +703,10 @@
       "lastTimestamp": 1754810932628
     },
     "grade": {
-      "learnTimes": 9,
+      "learnTimes": 19,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754810985072
+      "rightTimes": 1,
+      "lastTimestamp": 1754872571496
     },
     "alley": {
       "learnTimes": 2,
@@ -715,10 +715,10 @@
       "lastTimestamp": 1754811003966
     },
     "shepherd": {
-      "learnTimes": 8,
+      "learnTimes": 13,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1754811066695
+      "rightTimes": 1,
+      "lastTimestamp": 1754873219567
     },
     "awkward": {
       "learnTimes": 10,
@@ -727,10 +727,172 @@
       "lastTimestamp": 1754811147147
     },
     "cloud": {
-      "learnTimes": 6,
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1754872275168
+    },
+    "afraid": {
+      "learnTimes": 2,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754870602064
+    },
+    "middle": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754870711562
+    },
+    "lot": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754870816490
+    },
+    "hunt": {
+      "learnTimes": 9,
       "wrongTimes": 1,
       "rightTimes": 0,
-      "lastTimestamp": 1754811190154
+      "lastTimestamp": 1754870927517
+    },
+    "clever": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754870987801
+    },
+    "create": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871080512
+    },
+    "attack": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871422662
+    },
+    "promise": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871468878
+    },
+    "carefully": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871520144
+    },
+    "pleased": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871617763
+    },
+    "adventure": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871686122
+    },
+    "cruel": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871873690
+    },
+    "certain": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754871945144
+    },
+    "puzzle": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754872177908
+    },
+    "angry": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754872328589
+    },
+    "safe": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754872732661
+    },
+    "trick": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754872851842
+    },
+    "reply": {
+      "learnTimes": 13,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873010032
+    },
+    "agree": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873113348
+    },
+    "moment": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873306781
+    },
+    "scientists": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873604537
+    },
+    "arrive": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873629252
+    },
+    "finally": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873644782
+    },
+    "hide": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873827510
+    },
+    "bottom": {
+      "learnTimes": 5,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1754873908144
+    },
+    "approach": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754873984446
+    },
+    "well": {
+      "learnTimes": 16,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1754874123999
     }
   },
   "history": [
@@ -1767,6 +1929,475 @@
           "endedAt": 1754811190154,
           "passTime": 6,
           "studyState": 0
+        }
+      ]
+    },
+    {
+      "id": 1754874180386,
+      "beginAt": 1754870354523,
+      "title": "70",
+      "list": [
+        {
+          "word": "complaint",
+          "beginAt": 1754870358465,
+          "endedAt": 1754870413322,
+          "passTime": 5,
+          "studyState": 0
+        },
+        {
+          "word": "profound",
+          "beginAt": 1754870414004,
+          "endedAt": 1754870582849,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "afraid",
+          "beginAt": 1754870583141,
+          "endedAt": 1754870602064,
+          "passTime": 2,
+          "studyState": 1
+        },
+        {
+          "word": "rear",
+          "beginAt": 1754870602433,
+          "endedAt": 1754870650628,
+          "passTime": 6,
+          "studyState": 0
+        },
+        {
+          "word": "deaf",
+          "beginAt": 1754870650930,
+          "endedAt": 1754870663028,
+          "passTime": 1,
+          "studyState": 1
+        },
+        {
+          "word": "middle",
+          "beginAt": 1754870663338,
+          "endedAt": 1754870711562,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "valentine",
+          "beginAt": 1754870711850,
+          "endedAt": 1754870750013,
+          "passTime": 5,
+          "studyState": 0
+        },
+        {
+          "word": "lot",
+          "beginAt": 1754870750328,
+          "endedAt": 1754870816490,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "pulse",
+          "beginAt": 1754870816878,
+          "endedAt": 1754870862096,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "hunt",
+          "beginAt": 1754870862418,
+          "endedAt": 1754870927517,
+          "passTime": 9,
+          "studyState": 0
+        },
+        {
+          "word": "clever",
+          "beginAt": 1754870927834,
+          "endedAt": 1754870987801,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "wool",
+          "beginAt": 1754870988158,
+          "endedAt": 1754871023461,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "create",
+          "beginAt": 1754871023813,
+          "endedAt": 1754871080512,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "several",
+          "beginAt": 1754871080841,
+          "endedAt": 1754871382710,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "attack",
+          "beginAt": 1754871383027,
+          "endedAt": 1754871422662,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "promise",
+          "beginAt": 1754871422955,
+          "endedAt": 1754871468878,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "carefully",
+          "beginAt": 1754871469183,
+          "endedAt": 1754871520144,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "enthusiastic",
+          "beginAt": 1754871520464,
+          "endedAt": 1754871586829,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "pleased",
+          "beginAt": 1754871587120,
+          "endedAt": 1754871617763,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "bay",
+          "beginAt": 1754871618060,
+          "endedAt": 1754871637549,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "adventure",
+          "beginAt": 1754871637898,
+          "endedAt": 1754871686122,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "horizon",
+          "beginAt": 1754871686419,
+          "endedAt": 1754871808294,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "cruel",
+          "beginAt": 1754871808604,
+          "endedAt": 1754871873690,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "certain",
+          "beginAt": 1754871874085,
+          "endedAt": 1754871945144,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "chin",
+          "beginAt": 1754871945476,
+          "endedAt": 1754872055756,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "appropriate",
+          "beginAt": 1754872056055,
+          "endedAt": 1754872149957,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "puzzle",
+          "beginAt": 1754872150263,
+          "endedAt": 1754872177908,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "ambitious",
+          "beginAt": 1754872178221,
+          "endedAt": 1754872237372,
+          "passTime": 6,
+          "studyState": 0
+        },
+        {
+          "word": "cloud",
+          "beginAt": 1754872237708,
+          "endedAt": 1754872275168,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "angry",
+          "beginAt": 1754872275490,
+          "endedAt": 1754872328589,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "irritate",
+          "beginAt": 1754872328929,
+          "endedAt": 1754872405348,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "deceive",
+          "beginAt": 1754872405712,
+          "endedAt": 1754872459331,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "criticize",
+          "beginAt": 1754872459934,
+          "endedAt": 1754872491247,
+          "passTime": 3,
+          "studyState": 0
+        },
+        {
+          "word": "sled",
+          "beginAt": 1754872491568,
+          "endedAt": 1754872524005,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "grade",
+          "beginAt": 1754872524348,
+          "endedAt": 1754872571496,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "refuge",
+          "beginAt": 1754872571827,
+          "endedAt": 1754872618313,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "bulletin",
+          "beginAt": 1754872618623,
+          "endedAt": 1754872706925,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "safe",
+          "beginAt": 1754872707270,
+          "endedAt": 1754872732661,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "tremendous",
+          "beginAt": 1754872732998,
+          "endedAt": 1754872771710,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "leisure",
+          "beginAt": 1754872772036,
+          "endedAt": 1754872815567,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "trick",
+          "beginAt": 1754872815899,
+          "endedAt": 1754872851842,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "veterinarian",
+          "beginAt": 1754872852197,
+          "endedAt": 1754872926749,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "reply",
+          "beginAt": 1754872927174,
+          "endedAt": 1754873010032,
+          "passTime": 13,
+          "studyState": 1
+        },
+        {
+          "word": "agree",
+          "beginAt": 1754873010359,
+          "endedAt": 1754873113348,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "expedition",
+          "beginAt": 1754873113677,
+          "endedAt": 1754873183649,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "shepherd",
+          "beginAt": 1754873184050,
+          "endedAt": 1754873219567,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "mayor",
+          "beginAt": 1754873219939,
+          "endedAt": 1754873268426,
+          "passTime": 9,
+          "studyState": 0
+        },
+        {
+          "word": "moment",
+          "beginAt": 1754873268747,
+          "endedAt": 1754873306781,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "ridiculous",
+          "beginAt": 1754873307128,
+          "endedAt": 1754873356399,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "topic",
+          "beginAt": 1754873356781,
+          "endedAt": 1754873406007,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "abandon",
+          "beginAt": 1754873406352,
+          "endedAt": 1754873446826,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "comprehend",
+          "beginAt": 1754873447160,
+          "endedAt": 1754873552328,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "scientists",
+          "beginAt": 1754873547466,
+          "endedAt": 1754873604537,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "arrive",
+          "beginAt": 1754873604865,
+          "endedAt": 1754873629252,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "finally",
+          "beginAt": 1754873629590,
+          "endedAt": 1754873644782,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "senses",
+          "beginAt": 1754873645136,
+          "endedAt": 1754873671368,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "elbow",
+          "beginAt": 1754873671690,
+          "endedAt": 1754873740851,
+          "passTime": 6,
+          "studyState": 0
+        },
+        {
+          "word": "bark",
+          "beginAt": 1754873741179,
+          "endedAt": 1754873784179,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "hide",
+          "beginAt": 1754873784512,
+          "endedAt": 1754873827510,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "brilliant",
+          "beginAt": 1754873827907,
+          "endedAt": 1754873879969,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "bottom",
+          "beginAt": 1754873880314,
+          "endedAt": 1754873908144,
+          "passTime": 5,
+          "studyState": 0
+        },
+        {
+          "word": "whistle",
+          "beginAt": 1754873908755,
+          "endedAt": 1754873938554,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "approach",
+          "beginAt": 1754873938872,
+          "endedAt": 1754873984446,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "mutual",
+          "beginAt": 1754873984768,
+          "endedAt": 1754874027243,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "well",
+          "beginAt": 1754874027664,
+          "endedAt": 1754874123999,
+          "passTime": 16,
+          "studyState": 1
+        },
+        {
+          "word": "whether",
+          "beginAt": 1754874124336,
+          "endedAt": 1754874177282,
+          "passTime": 11,
+          "studyState": 1
         }
       ]
     }

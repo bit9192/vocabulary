@@ -41,8 +41,14 @@ function WordsLearning() {
             52: () => widgetRef.current.act.next(), // 4
             53: () => widgetRef.current.act.prev(), // 5
             69: () => widgetRef.current.act.previousWord(), // E
-            82: () => widgetRef.current.act.nextWord(1), // R
-            84: () => widgetRef.current.act.nextWord(0), // T
+            82: () => {
+                switchWord(false)
+                widgetRef.current.act.nextWord(1)
+            }, // R
+            84: () => {
+                switchWord(false)
+                widgetRef.current.act.nextWord(0)
+            }, // T
             87: () => switchWord(v => !v), // W,
             81: () => widgetRef.current.act.done() // Q
         }

@@ -61,7 +61,7 @@ async function loadWidget(id = "widget-1") {
     })
 }
 
-function GetWordList(r, n) {
+function GetWordList(r = [], n) {
     let defaultIndex = 0
     const list = shuffleArray(
         GetAllCache(r.map(v => v*1), n)
@@ -111,9 +111,8 @@ export function useWordExecute() {
     const [wordList, setList] = useState([])
     
     const widgetRef = useRef(null)
-    const pageR = searchParams.get('r')
+    const pageR = searchParams.get('r') || ""
     const pageN = searchParams.get('n')
-
     useEffect(() => {
         const init = async () => {
             if (!widgetRef.current) {
@@ -130,7 +129,7 @@ export function useWordExecute() {
                 preWord,
                 nextWord,
                 setWord: setWordByList
-            } = GetWordList(pageR.split('_'), pageN)
+            } = GetWordList(pageR === "" ?[] : pageR.split('_'), pageN)
             setList(list)
             // init list 
             let _lesson = CreateLesson(pageR)
