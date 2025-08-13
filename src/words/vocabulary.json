@@ -756,7 +756,6 @@
         "pedal",
         "walk",
         "climb",
-        "crawl",
         "sprint",
         "hop",
         "dance",
@@ -1597,5 +1596,27 @@
         "thread",
         "trim",
         "upwards"
+    ],
+    [
+        "ail",
+        "ally",
+        "boast",
+        "bounce",
+        "bully",
+        "carbohydrate",
+        "crawl",
+        "defeat",
+        "dial",
+        "dominant",
+        "mercy",
+        "nod",
+        "opponent",
+        "quarrel",
+        "rival",
+        "sore",
+        "sting",
+        "strain",
+        "torture",
+        "wrestle"
     ]
 ]
