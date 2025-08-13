@@ -174,7 +174,7 @@ export function useWordExecute() {
                     widgetRef.current.widget.next()
                     _lesson.passOne()
                 },
-                prev: widgetRef.current.widget.prev,
+                prev: widgetRef.current.widget.previous,
                 getWords: word => {
                     if (_loading) return
                     getWords(word)
