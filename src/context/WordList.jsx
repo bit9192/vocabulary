@@ -21,6 +21,7 @@ async function Init() {
                 return {
                     word,
                     lastTimestamp: -1,
+                    lastStatus: 0,
                     learnTimes: 0,
                     rightTimes: 0,
                     wrongTimes: 0
@@ -53,12 +54,16 @@ export const GetAllCache = (lessons, newNum = 0) => {
     })
 
     _newW = _newW.sort((x, y) => {
-        if (x.rightTimes !== y.rightTimes) {
-            return x.rightTimes - y.rightTimes
+        if (x.lastStatus !== y.lastStatus) {
+            return x.lastStatus - y.lastStatus
         }
         if (x.wrongTimes !== y.wrongTimes) {
             return y.wrongTimes - x.wrongTimes
         }
+        if (x.rightTimes !== y.rightTimes) {
+            return x.rightTimes - y.rightTimes
+        }
+        
         // if (x.wrongTimes !== y.wrongTimes) {
         //     return y.wrongTimes - x.wrongTimes
         // }

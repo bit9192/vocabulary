@@ -9,11 +9,21 @@ async function main(params) {
     db.data.history.forEach(v => {
         v.list.forEach(v => {
             console.log(v)
-            SetWord(v)
+            // SetWord(v)
+            words[v.word] = v.studyState
         })
     })
 
+    console.log(
+        words
+    )
+    Object.keys(words).forEach(k => {
+        db.data.words[k].lastStatus = words[k]
+    })
+
+    console.log(db.data.words)
     await db.write()
+
 }
 
 main()
