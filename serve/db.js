@@ -11,7 +11,8 @@ const _WORD_ = {
   learnTimes: 0,
   wrongTimes: 0,
   rightTimes: 0,
-  lastTimestamp: 0
+  lastTimestamp: 0,
+  lastStatus: -1
 }
 
 // const adapter = new JSONFile('./db.json', {})
@@ -37,6 +38,7 @@ export function SetWord(wordObject) {
   }
   // db.data.words[word].lastTimestamp = wordObject.endedAt === -1 ? new Date() * 1 : wordObject.endedAt
   db.data.words[word].lastTimestamp = wordObject.endedAt
+  db.data.words[word].lastStatus = wordObject.studyState
 }
 
 export function AddHistory(lesson) {
