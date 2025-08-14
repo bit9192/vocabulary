@@ -15,6 +15,7 @@ import VOCABULARY_LIST from '../words/vocabulary.json'
 let _ALL_ = null
 async function Init() {
     const wordList = await GetAll()
+    console.log({wordList})
     const words = VOCABULARY_LIST.map(list => {
         return list.map(word => {
             if (!wordList[word]) {
