@@ -5,7 +5,7 @@ async function main(params) {
     const db = await InitDBOnce()
 
     console.log(db.data.words)
-
+    const words = {}
     db.data.history.forEach(v => {
         v.list.forEach(v => {
             console.log(v)
