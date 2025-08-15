@@ -113,49 +113,85 @@ async function WordsList(_lessons, _total) {
     await refresh()
 
     const [words, newWords] = lessons(_lessons || [])
-    let defaultIndex = 0
     let _list = [...words]
     _total = _total - _list.length
     if (_total > 0) {
         _list.push(...newWords.slice(0, _total))
     }
 
+    let _word = _list[0].word
     let _wordRightTimes = {}
+    _list.forEach(v => {
+        _wordRightTimes[v.word] = 0
+    })
 
-    const nextWord = (state) => {
-        
-        const max = _list.length - 1
-        if (defaultIndex >= max) {
-            defaultIndex = max
+    let _indexHistory = []
+    const _addHistory = word => {
+        if (word === _indexHistory[_indexHistory.length - 1]) return
+        _indexHistory.push(word)
+    }
+    const _setWordRight = (word, state) => {
+        if (state === 1) _wordRightTimes[word] += 1
+        else _wordRightTimes[word] = 0
+    }
+    const _nextWord = (minRightTimes, exceptWord) => {
+        const words = Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w] < minRightTimes && exceptWord !== w)
+        if (words.length === 0) {
+            if (_wordRightTimes[exceptWord] >= minRightTimes ) return null
+            return exceptWord
         }
-        else {
-            defaultIndex++
-        }
-        return _list[defaultIndex].word
+        return shuffleArray(words)[0]
+    }
+
+    const _minRight = 2
+    const nextWord = state => {
+        // const max = _list.length - 1
+        // if (defaultIndex >= max) {
+        //     defaultIndex = max
+        // }
+        // else {
+        //     defaultIndex++
+        // }
+        // return _list[defaultIndex].word
+        _setWordRight(_word, state)
+        const newWord = _nextWord(_minRight, _word)
+        if (!newWord) return _word
+        _word = newWord
+        _addHistory(_word)
+        return _word
     }
 
     const preWord = () => {
-        if (defaultIndex > 0) {
-            defaultIndex--
-        }
-        return _list[defaultIndex].word
+        // if (defaultIndex > 0) {
+        //     defaultIndex--
+        // }
+        // return _list[defaultIndex].word
+        if (_indexHistory.length <= 1) return _word
+        _indexHistory = _indexHistory.slice(0, _indexHistory.length - 1)
+        _word = _indexHistory[_indexHistory.length - 1]
+        return _word
     }
 
     const setWord = word => {
-        const index = _list.findIndex(v => v.word === word)
-        if (index === -1) throw "word error"
-        defaultIndex = index
+        // const index = _list.findIndex(v => v.word === word)
+        // if (index === -1) throw "word error"
+        // defaultIndex = index
+        _addHistory(word)
+        _word = word
     }
 
-    const getWord = () => _list[defaultIndex].word
+    const getWord = () => _word // _list[defaultIndex].word
 
-    
+    const doneWords = (minRightTimes = _minRight) => {
+        return Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w] >= minRightTimes).length
+    }
 
     return {
         getWord,
         preWord,
         nextWord,
         setWord,
+        doneWords,
         list: _list,
     }
 }
@@ -166,6 +202,7 @@ export function useWordExecute() {
     const [searchParams] = useSearchParams()
     // 0 loading | -1 pause | 1 done
     const [loading, setLoading] = useState(0)
+    const [doneWords, setDoneWords] = useState(0)
     const [word, setWord] = useState(null)
     const [wordList, setList] = useState([])
     
@@ -187,10 +224,10 @@ export function useWordExecute() {
                 getWord,
                 preWord,
                 nextWord,
+                doneWords,
                 setWord: setWordByList
             } = await WordsList(pageR === "" ? [] : pageR.split('_'), pageN)
             setLoading(1)
-            console.log(list)
             setList(list)
             // init list 
             let _lesson = CreateLesson(pageR === ""  ? "null-"+(new Date()*1) : pageR)
@@ -201,6 +238,7 @@ export function useWordExecute() {
                 _lesson.passOne(_word_)
                 setWordByList(_word_)
                 setWord(_word_)
+                setDoneWords(doneWords())
             })
             
             widgetRef.current.widget.on('onPlayerStateChange', (event) => {
@@ -234,6 +272,7 @@ export function useWordExecute() {
                     if (_loading) return
                     widgetRef.current.widget.next()
                     _lesson.passOne()
+                    
                 },
                 prev: widgetRef.current.widget.previous,
                 getWords: word => {
@@ -265,6 +304,7 @@ export function useWordExecute() {
         loading,
         word,
         wordList,
-        widgetRef
+        widgetRef,
+        doneWords
     }
 }

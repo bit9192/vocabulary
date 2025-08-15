@@ -27,7 +27,8 @@ function WordsLearning() {
         loading,
         word,
         wordList,
-        widgetRef
+        widgetRef,
+        doneWords
     } = useWordExecute()
 
     const [showWord, switchWord] = useState(false)
@@ -75,7 +76,7 @@ function WordsLearning() {
                 </Widget>
             </Curtain>
             <WhiteSpace />
-            <TextM>{wordList.length || 0} - {wordList.findIndex(v => v.word === word) + 1}</TextM>
+            <TextM>{wordList.length || 0} - {doneWords}</TextM>
             {/* 0 loading | -1 pause | 1 done */}
             {
                 !word ? 
@@ -143,7 +144,7 @@ function WordsLearning() {
                     wordList.map(v =>
                         <WordBlock
                             key={v.word}
-                            onClick={()=> widgetRef.current.act.getWords(v)}
+                            onClick={()=> widgetRef.current.act.getWords(v.word)}
                             active={v.word === word}
                         >{v.word}</WordBlock>
                     )
