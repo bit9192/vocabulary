@@ -1,6 +1,6 @@
 import {
     // VOCABULARY_LIST,
-    useList,
+    useWordsList,
     getRandomIndex
 } from '../hook/useVocabulary'
 
@@ -18,18 +18,15 @@ import {
 } from "react-router-dom"
 
 
-import {
-    useAllList
-} from '../context/WordList'
-
     
 function List() {
     const go = useNavigate()
     // console.log(go)
-    const list = useAllList()
-    console.log(
-        list
-    )
+    const {
+        // loading,
+        res
+    } = useWordsList()
+    const list = {all:res}
     return (
         <Container>
             <TextL>Choose one group then the system will randomly combined anther group to give you a study plan.</TextL>

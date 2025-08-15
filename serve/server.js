@@ -1,20 +1,20 @@
 // server.js
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
-import { InitDBOnce, AddHistory, InitDB } from './db.js'
+import { InitDBOnce, AddHistory, asyncDB } from './db.js'
 import { cors } from 'hono/cors'
 
 const app = new Hono()
 app.use('*', cors())  // 允许跨域
 
 app.get('/api/wordList', async (c) => {
-  const db = await InitDBOnce()
+  const db = await asyncDB()
   return c.json(db.data.words)
 })
 
 app.get('/api/recent', async (c) => {
   let wordsCount = c.req.query('n')
-  const db = await InitDBOnce()
+  const db = await asyncDB()
   let len = db.data.history.length
   let words = {}
   for(let i = len - 1; i >= 0; i--) {
@@ -53,7 +53,7 @@ app.get('/api/recent', async (c) => {
 app.post('/api/add', async (c) => {
   const body = await c.req.json()
   const newItem = { id: Date.now(), ...body }
-  const db = await InitDBOnce()
+  const db = await asyncDB()
   const [err] = AddHistory(newItem)
   if (err) {
     return c.json({result: ['repeat', null]})

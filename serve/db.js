@@ -66,3 +66,8 @@ export async function InitDBOnce() {
   }
   return db
 }
+
+export async function asyncDB() {
+  await db.read()
+  return db
+}

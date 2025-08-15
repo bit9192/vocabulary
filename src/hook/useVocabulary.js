@@ -1,11 +1,27 @@
 import VOCABULARY_LIST from '../words/vocabulary.json'
 
+import {
+    GetInit,
+    AddLesson,
+    GetRecent,
+    GetAll
+} from '../api/api'
+
+import {
+    useReq
+} from './tools'
+
 export {
     VOCABULARY_LIST
 }
 
-export function useList() {
-    return VOCABULARY_LIST
+export function useWordsList() {
+    const {refresh} = GetInit()
+    return useReq({
+        call: refresh,
+        type: [],
+        initReq: true
+    })
 }
 
 export function getVocabularyByIndex(arg) {

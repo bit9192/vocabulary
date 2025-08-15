@@ -8,7 +8,7 @@ import {
   // useHistory
 } from "react-router-dom";
 
-import WordAllContext from './context/WordList'
+// import WordAllContext from './context/WordList'
 import WordRoot from './pages/WordRoot'
 
 import Words from './pages/Learning'
@@ -44,7 +44,7 @@ function App() {
   // )
   return (
     <div className="App">
-      <WordAllContext>
+      {/* <WordAllContext> */}
         <Router>
           <Routes>
             {
@@ -55,7 +55,7 @@ function App() {
             }
           </Routes>
         </Router>
-      </WordAllContext>
+      {/* </WordAllContext> */}
       {/* <YougLish /> */}
       {/* <YouTo /> */}
       {/* <Words /> */}

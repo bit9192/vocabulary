@@ -75,7 +75,7 @@ function WordsLearning() {
                 </Widget>
             </Curtain>
             <WhiteSpace />
-            <TextM>{wordList.length || 0} - {wordList.findIndex(v => v === word) + 1}</TextM>
+            <TextM>{wordList.length || 0} - {wordList.findIndex(v => v.word === word) + 1}</TextM>
             {/* 0 loading | -1 pause | 1 done */}
             {
                 !word ? 
@@ -142,10 +142,10 @@ function WordsLearning() {
                 {
                     wordList.map(v =>
                         <WordBlock
-                            key={v}
+                            key={v.word}
                             onClick={()=> widgetRef.current.act.getWords(v)}
-                            active={v === word}
-                        >{v}</WordBlock>
+                            active={v.word === word}
+                        >{v.word}</WordBlock>
                     )
                 }
             </FlexDiv>

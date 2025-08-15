@@ -9,7 +9,8 @@ import {
 } from "react-router-dom"
 
 import {
-    shuffleArray
+    shuffleArray,
+    getUrlParams
 } from '../tools'
 
 import {
@@ -18,6 +19,7 @@ import {
 } from "../storage/cache"
 
 import {
+    GetInit,
     AddLesson,
     GetRecent,
     GetAll
@@ -61,46 +63,103 @@ async function loadWidget(id = "widget-1") {
     })
 }
 
-function GetWordList(r = [], n) {
-    let defaultIndex = 0
-    const list = shuffleArray(
-        GetAllCache(r.map(v => v*1), n)
-    )
+// function GetWordList(r = [], n) {
+//     let defaultIndex = 0
+//     const list = shuffleArray(
+//         GetAllCache(r.map(v => v*1), n)
+//     )
 
-    const nextWord = () => {
-        const max = list.length - 1
+//     const nextWord = () => {
+//         const max = list.length - 1
+//         if (defaultIndex >= max) {
+//             defaultIndex = max
+//         }
+//         else {
+//             defaultIndex++
+//         }
+//         return list[defaultIndex]
+//     }
+
+//     const preWord = () => {
+//         if (defaultIndex > 0) {
+//             defaultIndex--
+//         }
+//         return list[defaultIndex]
+//     }
+
+//     const setWord = word => {
+//         const index = list.findIndex(v => v === word)
+//         if (index === -1) throw "word error"
+//         defaultIndex = index
+//     }
+
+//     const getWord = () => list[defaultIndex]
+
+//     return {
+//         list,
+//         getWord,
+//         preWord,
+//         nextWord,
+//         setWord
+//     }
+// }
+
+
+async function WordsList(_lessons, _total) {
+    const {
+        refresh,
+        lessons
+    } = GetInit()
+    await refresh()
+
+    const [words, newWords] = lessons(_lessons || [])
+    let defaultIndex = 0
+    let _list = [...words]
+    _total = _total - _list.length
+    if (_total > 0) {
+        _list.push(...newWords.slice(0, _total))
+    }
+
+    let _wordRightTimes = {}
+
+    const nextWord = (state) => {
+        
+        const max = _list.length - 1
         if (defaultIndex >= max) {
             defaultIndex = max
         }
         else {
             defaultIndex++
         }
-        return list[defaultIndex]
+        return _list[defaultIndex].word
     }
 
     const preWord = () => {
         if (defaultIndex > 0) {
             defaultIndex--
         }
-        return list[defaultIndex]
+        return _list[defaultIndex].word
     }
 
     const setWord = word => {
-        const index = list.findIndex(v => v === word)
+        const index = _list.findIndex(v => v.word === word)
         if (index === -1) throw "word error"
         defaultIndex = index
     }
 
-    const getWord = () => list[defaultIndex]
+    const getWord = () => _list[defaultIndex].word
+
+    
 
     return {
-        list,
         getWord,
         preWord,
         nextWord,
-        setWord
+        setWord,
+        list: _list,
     }
 }
+
 
 export function useWordExecute() {
 
@@ -115,9 +174,9 @@ export function useWordExecute() {
     const pageN = searchParams.get('n')
     useEffect(() => {
         const init = async () => {
+            setLoading(0)
             if (!widgetRef.current) {
                 const widget = await loadWidget()
-                setLoading(1)
                 widgetRef.current = {
                     widget
                 }
@@ -129,10 +188,12 @@ export function useWordExecute() {
                 preWord,
                 nextWord,
                 setWord: setWordByList
-            } = GetWordList(pageR === "" ?[] : pageR.split('_'), pageN)
+            } = await WordsList(pageR === "" ? [] : pageR.split('_'), pageN)
+            setLoading(1)
+            console.log(list)
             setList(list)
             // init list 
-            let _lesson = CreateLesson(pageR)
+            let _lesson = CreateLesson(pageR === ""  ? "null-"+(new Date()*1) : pageR)
             
             let _loading = false
             widgetRef.current.widget.on('onFetchDone', (event) => {
@@ -186,7 +247,7 @@ export function useWordExecute() {
                 nextWord: (state) => {
                     if (_loading) return
                     _lesson.done(state)
-                    getWords(nextWord())
+                    getWords(nextWord(state))
                 },
                 done() {
                     setLoading(0)
