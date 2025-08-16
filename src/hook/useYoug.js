@@ -114,15 +114,15 @@ async function WordsList(_lessons, _total) {
 
     const [words, newWords] = lessons(_lessons || [])
     let _list = [...words]
-    _total = _total - _list.length
-    if (_total > 0) {
-        _list.push(...newWords.slice(0, _total))
-    }
+    _list.push(...newWords.slice(0, _total))
 
     let _word = _list[0].word
     let _wordRightTimes = {}
     _list.forEach(v => {
-        _wordRightTimes[v.word] = 0
+        _wordRightTimes[v.word] = {
+            rights: 0,
+            learning: 0
+        }
     })
 
     let _indexHistory = []
@@ -131,16 +131,19 @@ async function WordsList(_lessons, _total) {
         _indexHistory.push(word)
     }
     const _setWordRight = (word, state) => {
-        if (state === 1) _wordRightTimes[word] += 1
-        else _wordRightTimes[word] = 0
+        _wordRightTimes[word].learning += 1
+        if (state === 1) _wordRightTimes[word].rights += 1
+        else _wordRightTimes[word].rights = 0
     }
     const _nextWord = (minRightTimes, exceptWord) => {
-        const words = Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w] < minRightTimes && exceptWord !== w)
+        const words = Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w].rights < minRightTimes && exceptWord !== w)
         if (words.length === 0) {
             if (_wordRightTimes[exceptWord] >= minRightTimes ) return null
             return exceptWord
         }
-        return shuffleArray(words)[0]
+        return shuffleArray(
+            shuffleArray(words)
+        )[0]
     }
 
     const _minRight = 2
@@ -182,8 +185,24 @@ async function WordsList(_lessons, _total) {
 
     const getWord = () => _word // _list[defaultIndex].word
 
-    const doneWords = (minRightTimes = _minRight) => {
-        return Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w] >= minRightTimes).length
+    const doneWords = () => {
+        // return Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w].rights >= minRightTimes).length
+        let _done = 0, _right = 0;
+        Object.keys(_wordRightTimes).forEach(w => {
+            const [r, l] = checkWord(w)
+            if (r) _done += 1
+            if (l) _right += 1
+        })
+        return [_done, _right]
+    }
+
+    const checkWord = (word = _word, minRightTimes = _minRight, maxLearn = _minRight) => {
+        const {
+            rights,
+            learning
+        } = _wordRightTimes[word]
+        const _done = rights >= minRightTimes
+        return [_done, learning <= maxLearn && _done]
     }
 
     return {
@@ -192,6 +211,7 @@ async function WordsList(_lessons, _total) {
         nextWord,
         setWord,
         doneWords,
+        checkWord,
         list: _list,
     }
 }
@@ -202,7 +222,7 @@ export function useWordExecute() {
     const [searchParams] = useSearchParams()
     // 0 loading | -1 pause | 1 done
     const [loading, setLoading] = useState(0)
-    const [doneWords, setDoneWords] = useState(0)
+    const [doneWords, setDoneWords] = useState([0,0])
     const [word, setWord] = useState(null)
     const [wordList, setList] = useState([])
     
@@ -225,6 +245,7 @@ export function useWordExecute() {
                 preWord,
                 nextWord,
                 doneWords,
+                checkWord,
                 setWord: setWordByList
             } = await WordsList(pageR === "" ? [] : pageR.split('_'), pageN)
             setLoading(1)
@@ -285,11 +306,17 @@ export function useWordExecute() {
                 },
                 nextWord: (state) => {
                     if (_loading) return
-                    _lesson.done(state)
+                    const previousWord = getWord()
                     getWords(nextWord(state))
+                    // It is considered correct if there are two consecutive correct attempts and the total number of attempts does not exceed two.
+                    const [done, _state] = checkWord(previousWord)
+                    if (done) {
+                        _lesson.done(_state === false ? 0 : 1)
+                    }
                 },
                 done() {
                     setLoading(0)
+                    // console.log(_lesson.show())
                     AddLesson(_lesson.show()).then(e => {
                         setLoading(1)
                         console.log(e)

@@ -76,7 +76,7 @@ function WordsLearning() {
                 </Widget>
             </Curtain>
             <WhiteSpace />
-            <TextM>{wordList.length || 0} - {doneWords}</TextM>
+            <TextM>{wordList.length || 0} - done {doneWords[0]} - passed {doneWords[1]}</TextM>
             {/* 0 loading | -1 pause | 1 done */}
             {
                 !word ? 
