@@ -1639,10 +1639,10 @@
       "lastStatus": 1
     },
     "mill": {
-      "learnTimes": 32,
+      "learnTimes": 41,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755240603061,
+      "rightTimes": 4,
+      "lastTimestamp": 1755307961855,
       "lastStatus": 1
     },
     "pole": {
@@ -1653,10 +1653,10 @@
       "lastStatus": 1
     },
     "sew": {
-      "learnTimes": 28,
+      "learnTimes": 38,
       "wrongTimes": 2,
-      "rightTimes": 2,
-      "lastTimestamp": 1755236700125,
+      "rightTimes": 3,
+      "lastTimestamp": 1755307056026,
       "lastStatus": 1
     },
     "breathe": {
@@ -1681,10 +1681,10 @@
       "lastStatus": 1
     },
     "needle": {
-      "learnTimes": 43,
+      "learnTimes": 50,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755239221971,
+      "rightTimes": 4,
+      "lastTimestamp": 1755305537205,
       "lastStatus": 1
     },
     "focus": {
@@ -1702,38 +1702,38 @@
       "lastStatus": 1
     },
     "arithmetic": {
-      "learnTimes": 32,
+      "learnTimes": 41,
       "wrongTimes": 3,
-      "rightTimes": 1,
-      "lastTimestamp": 1755237499247,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755307005271,
+      "lastStatus": 1
     },
     "couch": {
-      "learnTimes": 10,
+      "learnTimes": 16,
       "wrongTimes": 0,
-      "rightTimes": 4,
-      "lastTimestamp": 1755239007790,
+      "rightTimes": 5,
+      "lastTimestamp": 1755306941617,
       "lastStatus": 1
     },
     "trim": {
-      "learnTimes": 35,
+      "learnTimes": 47,
       "wrongTimes": 4,
-      "rightTimes": 0,
-      "lastTimestamp": 1755235735773,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1755307950910,
+      "lastStatus": 1
     },
     "anniversary": {
-      "learnTimes": 43,
+      "learnTimes": 49,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755240898932,
+      "rightTimes": 4,
+      "lastTimestamp": 1755307113097,
       "lastStatus": 1
     },
     "coal": {
-      "learnTimes": 30,
+      "learnTimes": 36,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755240436746,
+      "rightTimes": 4,
+      "lastTimestamp": 1755308045520,
       "lastStatus": 1
     },
     "coal2": {
@@ -1751,10 +1751,10 @@
       "lastStatus": 1
     },
     "upwards": {
-      "learnTimes": 52,
+      "learnTimes": 87,
       "wrongTimes": 2,
-      "rightTimes": 2,
-      "lastTimestamp": 1755240367429,
+      "rightTimes": 3,
+      "lastTimestamp": 1755307285400,
       "lastStatus": 1
     },
     "fortunate": {
@@ -1765,17 +1765,17 @@
       "lastStatus": 1
     },
     "ashamed": {
-      "learnTimes": 15,
+      "learnTimes": 18,
       "wrongTimes": 0,
-      "rightTimes": 4,
-      "lastTimestamp": 1755238650513,
+      "rightTimes": 5,
+      "lastTimestamp": 1755307175864,
       "lastStatus": 1
     },
     "drip": {
-      "learnTimes": 35,
+      "learnTimes": 45,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755238935540,
+      "rightTimes": 4,
+      "lastTimestamp": 1755307477797,
       "lastStatus": 1
     },
     "member": {
@@ -1793,31 +1793,31 @@
       "lastStatus": 1
     },
     "burst": {
-      "learnTimes": 30,
+      "learnTimes": 39,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755238132207,
+      "rightTimes": 4,
+      "lastTimestamp": 1755306406319,
       "lastStatus": 1
     },
     "thread": {
-      "learnTimes": 28,
+      "learnTimes": 42,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755239491154,
-      "lastStatus": 0
+      "rightTimes": 4,
+      "lastTimestamp": 1755307034179,
+      "lastStatus": 1
     },
     "carpenter": {
-      "learnTimes": 39,
+      "learnTimes": 48,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755236857127,
+      "rightTimes": 4,
+      "lastTimestamp": 1755307847461,
       "lastStatus": 1
     },
     "ivory": {
-      "learnTimes": 35,
+      "learnTimes": 74,
       "wrongTimes": 0,
-      "rightTimes": 4,
-      "lastTimestamp": 1755237423278,
+      "rightTimes": 5,
+      "lastTimestamp": 1755308136620,
       "lastStatus": 1
     },
     "however": {
@@ -1856,10 +1856,10 @@
       "lastStatus": 1
     },
     "shed": {
-      "learnTimes": 24,
+      "learnTimes": 33,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755238808446,
+      "rightTimes": 4,
+      "lastTimestamp": 1755306981006,
       "lastStatus": 1
     },
     "behavior": {
@@ -1870,10 +1870,10 @@
       "lastStatus": 1
     },
     "elegant": {
-      "learnTimes": 30,
+      "learnTimes": 40,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1755236968734,
+      "rightTimes": 4,
+      "lastTimestamp": 1755305224715,
       "lastStatus": 1
     },
     "process": {
@@ -2122,143 +2122,143 @@
       "lastStatus": 1
     },
     "sting": {
-      "learnTimes": 14,
+      "learnTimes": 23,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755239883384,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755307707536,
+      "lastStatus": 1
     },
     "dial": {
-      "learnTimes": 18,
+      "learnTimes": 27,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755236908843,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755306002065,
+      "lastStatus": 1
     },
     "quarrel": {
-      "learnTimes": 19,
+      "learnTimes": 40,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1755236769870,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1755308032606,
+      "lastStatus": 1
     },
     "mercy": {
-      "learnTimes": 24,
+      "learnTimes": 32,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755238465700,
+      "rightTimes": 2,
+      "lastTimestamp": 1755306961789,
       "lastStatus": 1
     },
     "dominant": {
-      "learnTimes": 17,
+      "learnTimes": 28,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1755240374088,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1755307893494,
+      "lastStatus": 1
     },
     "opponent": {
-      "learnTimes": 24,
+      "learnTimes": 31,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755237139613,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755307641813,
+      "lastStatus": 1
     },
     "torture": {
-      "learnTimes": 6,
+      "learnTimes": 15,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1755239548816,
+      "rightTimes": 3,
+      "lastTimestamp": 1755307662093,
       "lastStatus": 1
     },
     "crawl": {
-      "learnTimes": 22,
+      "learnTimes": 48,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1755238792519,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1755307548303,
+      "lastStatus": 1
     },
     "nod": {
-      "learnTimes": 22,
+      "learnTimes": 35,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1755238890512,
+      "rightTimes": 3,
+      "lastTimestamp": 1755308019093,
       "lastStatus": 1
     },
     "boast": {
-      "learnTimes": 21,
+      "learnTimes": 41,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755240079795,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755307981876,
+      "lastStatus": 1
     },
     "strain": {
-      "learnTimes": 26,
+      "learnTimes": 45,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755237951922,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755308078647,
+      "lastStatus": 1
     },
     "carbohydrate": {
-      "learnTimes": 12,
+      "learnTimes": 21,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755240473257,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755307206439,
+      "lastStatus": 1
     },
     "wrestle": {
-      "learnTimes": 12,
+      "learnTimes": 19,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755240661985,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755306422402,
+      "lastStatus": 1
     },
     "bounce": {
-      "learnTimes": 14,
+      "learnTimes": 20,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755237078329,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755305238913,
+      "lastStatus": 1
     },
     "defeat": {
-      "learnTimes": 8,
+      "learnTimes": 15,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1755239301123,
+      "rightTimes": 3,
+      "lastTimestamp": 1755307759802,
       "lastStatus": 1
     },
     "bully": {
-      "learnTimes": 14,
+      "learnTimes": 27,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1755236468261,
+      "rightTimes": 3,
+      "lastTimestamp": 1755307690394,
       "lastStatus": 1
     },
     "ally": {
-      "learnTimes": 14,
+      "learnTimes": 26,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1755239097401,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1755306861190,
+      "lastStatus": 1
     },
     "ail": {
-      "learnTimes": 27,
+      "learnTimes": 35,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1755237354836,
+      "rightTimes": 3,
+      "lastTimestamp": 1755305267135,
       "lastStatus": 1
     },
     "rival": {
-      "learnTimes": 15,
+      "learnTimes": 21,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1755239641001,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1755306442681,
+      "lastStatus": 1
     },
     "sore": {
-      "learnTimes": 28,
+      "learnTimes": 49,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1755236015966,
+      "rightTimes": 1,
+      "lastTimestamp": 1755306466847,
       "lastStatus": 0
     },
     "tradition": {
@@ -2448,7 +2448,7 @@
       "wrongTimes": 0,
       "rightTimes": 1,
       "lastTimestamp": 1755240749113,
-      "lastStatus": 1
+      "lastStatus": 0
     },
     "instance": {
       "learnTimes": 7,
@@ -6963,6 +6963,272 @@
           "beginAt": 1755241008506,
           "endedAt": 1755241136791,
           "passTime": 21,
+          "studyState": 1
+        }
+      ]
+    },
+    {
+      "id": 1755308138886,
+      "beginAt": 1755304851794,
+      "title": "71_72",
+      "list": [
+        {
+          "word": "anniversary",
+          "beginAt": 1755304853765,
+          "endedAt": 1755307113097,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "bounce",
+          "beginAt": 1755304885190,
+          "endedAt": 1755305238913,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "sore",
+          "beginAt": 1755304925210,
+          "endedAt": 1755306466847,
+          "passTime": 21,
+          "studyState": 1
+        },
+        {
+          "word": "wrestle",
+          "beginAt": 1755305033424,
+          "endedAt": 1755306422402,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "elegant",
+          "beginAt": 1755305072152,
+          "endedAt": 1755305224715,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "ail",
+          "beginAt": 1755305116993,
+          "endedAt": 1755305267135,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "needle",
+          "beginAt": 1755305267683,
+          "endedAt": 1755305537205,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "carpenter",
+          "beginAt": 1755305303386,
+          "endedAt": 1755307847461,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "burst",
+          "beginAt": 1755305351812,
+          "endedAt": 1755306406319,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "quarrel",
+          "beginAt": 1755305537760,
+          "endedAt": 1755308032606,
+          "passTime": 21,
+          "studyState": 1
+        },
+        {
+          "word": "mercy",
+          "beginAt": 1755305609487,
+          "endedAt": 1755306961789,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "shed",
+          "beginAt": 1755305655546,
+          "endedAt": 1755306981006,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "ivory",
+          "beginAt": 1755305747374,
+          "endedAt": 1755308136620,
+          "passTime": 39,
+          "studyState": 1
+        },
+        {
+          "word": "ally",
+          "beginAt": 1755305857866,
+          "endedAt": 1755306861190,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "dial",
+          "beginAt": 1755305919477,
+          "endedAt": 1755306002065,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "bully",
+          "beginAt": 1755306002364,
+          "endedAt": 1755307690394,
+          "passTime": 13,
+          "studyState": 1
+        },
+        {
+          "word": "sew",
+          "beginAt": 1755306039752,
+          "endedAt": 1755307056026,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "couch",
+          "beginAt": 1755306081518,
+          "endedAt": 1755306941617,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "upwards",
+          "beginAt": 1755306107317,
+          "endedAt": 1755307285400,
+          "passTime": 35,
+          "studyState": 1
+        },
+        {
+          "word": "rival",
+          "beginAt": 1755306195980,
+          "endedAt": 1755306442681,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "torture",
+          "beginAt": 1755306229145,
+          "endedAt": 1755307662093,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "crawl",
+          "beginAt": 1755306267552,
+          "endedAt": 1755307548303,
+          "passTime": 26,
+          "studyState": 1
+        },
+        {
+          "word": "opponent",
+          "beginAt": 1755306352956,
+          "endedAt": 1755307641813,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "boast",
+          "beginAt": 1755306467148,
+          "endedAt": 1755307981876,
+          "passTime": 20,
+          "studyState": 1
+        },
+        {
+          "word": "thread",
+          "beginAt": 1755306552965,
+          "endedAt": 1755307034179,
+          "passTime": 14,
+          "studyState": 1
+        },
+        {
+          "word": "arithmetic",
+          "beginAt": 1755306611958,
+          "endedAt": 1755307005271,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "mill",
+          "beginAt": 1755306655732,
+          "endedAt": 1755307961855,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "sting",
+          "beginAt": 1755306717825,
+          "endedAt": 1755307707536,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "carbohydrate",
+          "beginAt": 1755306861765,
+          "endedAt": 1755307206439,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "coal",
+          "beginAt": 1755306893605,
+          "endedAt": 1755308045520,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "ashamed",
+          "beginAt": 1755306905682,
+          "endedAt": 1755307175864,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "drip",
+          "beginAt": 1755307113483,
+          "endedAt": 1755307477797,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "strain",
+          "beginAt": 1755307306729,
+          "endedAt": 1755308078647,
+          "passTime": 19,
+          "studyState": 1
+        },
+        {
+          "word": "dominant",
+          "beginAt": 1755307407147,
+          "endedAt": 1755307893494,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "defeat",
+          "beginAt": 1755307548603,
+          "endedAt": 1755307759802,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "trim",
+          "beginAt": 1755307579105,
+          "endedAt": 1755307950910,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "nod",
+          "beginAt": 1755307707765,
+          "endedAt": 1755308019093,
+          "passTime": 13,
           "studyState": 1
         }
       ]

@@ -58,6 +58,7 @@ export const GetAllCache = (lessons, newNum = 0) => {
         if (x.lastStatus !== y.lastStatus) {
             return x.lastStatus - y.lastStatus
         }
+        
         if (x.wrongTimes !== y.wrongTimes) {
             return y.wrongTimes - x.wrongTimes
         }
