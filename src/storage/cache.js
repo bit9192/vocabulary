@@ -68,7 +68,9 @@ export function CreateLesson(title) {
     }
     
     function passOne(word = _word.word) {
-        _word = _add(word)
+        if (_word !== word) {
+            _word = _add(word)
+        }
         _word.passTime += 1
     }
 

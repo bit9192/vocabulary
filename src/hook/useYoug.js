@@ -187,13 +187,21 @@ async function WordsList(_lessons, _total) {
 
     const doneWords = () => {
         // return Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w].rights >= minRightTimes).length
-        let _done = 0, _right = 0;
+        let _done = 0, _fails = 0;
         Object.keys(_wordRightTimes).forEach(w => {
-            const [r, l] = checkWord(w)
-            if (r) _done += 1
-            if (l) _right += 1
+            const {
+                rights,
+                learning
+            } = _wordRightTimes[w]
+            if (rights >= _minRight) {
+                _done += 1
+            }
+            if (learning > rights) {
+                _fails += 1
+            }
+            // if (r) _fails += 1
         })
-        return [_done, _right]
+        return [_done, _fails]
     }
 
     const checkWord = (word = _word, minRightTimes = _minRight, maxLearn = _minRight) => {
