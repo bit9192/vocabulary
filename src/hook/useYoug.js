@@ -187,7 +187,7 @@ async function WordsList(_lessons, _total) {
 
     const doneWords = () => {
         // return Object.keys(_wordRightTimes).filter(w => _wordRightTimes[w].rights >= minRightTimes).length
-        let _done = 0, _fails = 0;
+        let _done = 0, _fails = 0, _learning = 0, _rights = 0;
         Object.keys(_wordRightTimes).forEach(w => {
             const {
                 rights,
@@ -195,13 +195,16 @@ async function WordsList(_lessons, _total) {
             } = _wordRightTimes[w]
             if (rights >= _minRight) {
                 _done += 1
+                if (learning <= _minRight) _rights += 1
+            } else {
+                _learning += 1
             }
             if (learning > rights) {
                 _fails += 1
             }
             // if (r) _fails += 1
         })
-        return [_done, _fails]
+        return [_done, _fails, _learning, _rights]
     }
 
     const checkWord = (word = _word, minRightTimes = _minRight, maxLearn = _minRight) => {
@@ -230,7 +233,7 @@ export function useWordExecute() {
     const [searchParams] = useSearchParams()
     // 0 loading | -1 pause | 1 done
     const [loading, setLoading] = useState(0)
-    const [doneWords, setDoneWords] = useState([0,0])
+    const [doneWords, setDoneWords] = useState([0,0,0,0])
     const [word, setWord] = useState(null)
     const [wordList, setList] = useState([])
     

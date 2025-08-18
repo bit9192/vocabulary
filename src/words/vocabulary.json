@@ -1621,7 +1621,7 @@
     [
         "absence",
         "aloud",
-        "bold",
+        "bald",
         "creep",
         "divorce",
         "imitate",
@@ -1637,5 +1637,27 @@
         "vanish",
         "wagon",
         "wrinkle"
+    ],
+    [
+        "abnormal",
+        "bamboo",
+        "blossom",
+        "compass",
+        "dialect",
+        "dishonest",
+        "dwarf",
+        "ecosystem",
+        "fatal",
+        "impatient",
+        "leaf",
+        "manuscript",
+        "marsh",
+        "patience",
+        "perfume",
+        "pond",
+        "proverb",
+        "pursuit",
+        "recite",
+        "wilderness"
     ]
 ]
