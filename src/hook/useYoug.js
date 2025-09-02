@@ -121,7 +121,8 @@ async function WordsList(_lessons, _total) {
     _list.forEach(v => {
         _wordRightTimes[v.word] = {
             rights: 0,
-            learning: 0
+            learning: 0,
+            pastime: 0
         }
     })
 
@@ -191,13 +192,17 @@ async function WordsList(_lessons, _total) {
         Object.keys(_wordRightTimes).forEach(w => {
             const {
                 rights,
-                learning
+                learning,
+                pastime
             } = _wordRightTimes[w]
             if (rights >= _minRight) {
                 _done += 1
-                if (learning <= _minRight) _rights += 1
+                if (learning <= _minRight) {
+                    _rights += 1
+                }
             } else {
                 _learning += 1
+
             }
             if (learning > rights) {
                 _fails += 1
@@ -210,16 +215,23 @@ async function WordsList(_lessons, _total) {
     const checkWord = (word = _word, minRightTimes = _minRight, maxLearn = _minRight) => {
         const {
             rights,
-            learning
+            learning,
+            // pastime
         } = _wordRightTimes[word]
         const _done = rights >= minRightTimes
         return [_done, learning <= maxLearn && _done]
     }
 
+    
+    const pastWord = word => {
+        _wordRightTimes[word].pastime += 1
+        // console.log(_wordRightTimes[word], word)
+    }
     return {
         getWord,
         preWord,
         nextWord,
+        pastWord,
         setWord,
         doneWords,
         checkWord,
@@ -257,6 +269,7 @@ export function useWordExecute() {
                 nextWord,
                 doneWords,
                 checkWord,
+                pastWord,
                 setWord: setWordByList
             } = await WordsList(pageR === "" ? [] : pageR.split('_'), pageN)
             setLoading(1)
@@ -304,7 +317,9 @@ export function useWordExecute() {
                     if (_loading) return
                     widgetRef.current.widget.next()
                     _lesson.passOne()
-                    
+                    pastWord(
+                        getWord()
+                    )
                 },
                 prev: widgetRef.current.widget.previous,
                 getWords: word => {
@@ -327,7 +342,7 @@ export function useWordExecute() {
                 },
                 done() {
                     setLoading(0)
-                    // console.log(_lesson.show())
+                    console.log(_lesson.show())
                     AddLesson(_lesson.show()).then(e => {
                         setLoading(1)
                         console.log(e)
