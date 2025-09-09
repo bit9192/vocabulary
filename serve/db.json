@@ -6056,11 +6056,11 @@
       "lastStatus": 1
     },
     "vibrate": {
-      "learnTimes": 48,
+      "learnTimes": 57,
       "wrongTimes": 3,
-      "rightTimes": 0,
-      "lastTimestamp": 1756798012415,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1756884121016,
+      "lastStatus": 1
     },
     "cut": {
       "learnTimes": 8,
@@ -6420,25 +6420,25 @@
       "lastStatus": 1
     },
     "rebel": {
-      "learnTimes": 20,
-      "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756797479466,
+      "learnTimes": 33,
+      "wrongTimes": 2,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060466216,
       "lastStatus": 0
     },
     "because": {
-      "learnTimes": 43,
+      "learnTimes": 50,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756799348928,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1756883612535,
+      "lastStatus": 1
     },
     "summit": {
-      "learnTimes": 39,
+      "learnTimes": 59,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756799572341,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757056817493,
+      "lastStatus": 1
     },
     "bring": {
       "learnTimes": 5,
@@ -6448,17 +6448,17 @@
       "lastStatus": 1
     },
     "armor": {
-      "learnTimes": 12,
+      "learnTimes": 25,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756796834240,
+      "rightTimes": 3,
+      "lastTimestamp": 1757060654550,
       "lastStatus": 1
     },
     "withdraw": {
-      "learnTimes": 23,
-      "wrongTimes": 1,
+      "learnTimes": 50,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1756796488999,
+      "lastTimestamp": 1757060320571,
       "lastStatus": 0
     },
     "tire": {
@@ -6476,17 +6476,17 @@
       "lastStatus": 1
     },
     "cliff": {
-      "learnTimes": 24,
+      "learnTimes": 44,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756798846796,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757060904359,
+      "lastStatus": 1
     },
     "revolution": {
-      "learnTimes": 2,
+      "learnTimes": 8,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756798022294,
+      "rightTimes": 3,
+      "lastTimestamp": 1757060594892,
       "lastStatus": 1
     },
     "solution": {
@@ -6497,17 +6497,17 @@
       "lastStatus": 1
     },
     "rational": {
-      "learnTimes": 11,
+      "learnTimes": 18,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756797636167,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1756884615900,
+      "lastStatus": 1
     },
     "lightning": {
-      "learnTimes": 12,
+      "learnTimes": 27,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756795430840,
+      "rightTimes": 3,
+      "lastTimestamp": 1757060289269,
       "lastStatus": 1
     },
     "narrow": {
@@ -6518,81 +6518,81 @@
       "lastStatus": 1
     },
     "until": {
-      "learnTimes": 11,
+      "learnTimes": 14,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756797110839,
-      "lastStatus": 0
-    },
-    "thunder": {
-      "learnTimes": 5,
-      "wrongTimes": 0,
       "rightTimes": 1,
-      "lastTimestamp": 1756796572732,
+      "lastTimestamp": 1756883744639,
       "lastStatus": 1
     },
-    "knight": {
-      "learnTimes": 16,
+    "thunder": {
+      "learnTimes": 24,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756797727005,
+      "rightTimes": 2,
+      "lastTimestamp": 1757061193535,
       "lastStatus": 0
     },
+    "knight": {
+      "learnTimes": 38,
+      "wrongTimes": 1,
+      "rightTimes": 2,
+      "lastTimestamp": 1757059648469,
+      "lastStatus": 1
+    },
     "retreat": {
-      "learnTimes": 4,
+      "learnTimes": 10,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756799004391,
+      "rightTimes": 3,
+      "lastTimestamp": 1757059796960,
       "lastStatus": 1
     },
     "apply": {
-      "learnTimes": 29,
-      "wrongTimes": 1,
+      "learnTimes": 53,
+      "wrongTimes": 3,
       "rightTimes": 0,
-      "lastTimestamp": 1756799501241,
+      "lastTimestamp": 1757061208746,
       "lastStatus": 0
     },
     "spear": {
-      "learnTimes": 10,
+      "learnTimes": 26,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756797158524,
+      "rightTimes": 3,
+      "lastTimestamp": 1757058573216,
       "lastStatus": 1
     },
     "steep": {
-      "learnTimes": 21,
+      "learnTimes": 44,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756798972572,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757059786903,
+      "lastStatus": 1
     },
     "yield": {
-      "learnTimes": 9,
+      "learnTimes": 24,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756798537271,
+      "rightTimes": 3,
+      "lastTimestamp": 1757061253712,
       "lastStatus": 1
     },
     "invasion": {
-      "learnTimes": 8,
+      "learnTimes": 21,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756799284629,
+      "rightTimes": 3,
+      "lastTimestamp": 1757060935286,
       "lastStatus": 1
     },
     "boom": {
-      "learnTimes": 13,
+      "learnTimes": 36,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756798049816,
+      "rightTimes": 3,
+      "lastTimestamp": 1757059995224,
       "lastStatus": 1
     },
     "warrior": {
-      "learnTimes": 17,
+      "learnTimes": 28,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756798773697,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757058819495,
+      "lastStatus": 1
     },
     "struggle": {
       "learnTimes": 5,
@@ -6616,10 +6616,10 @@
       "lastStatus": 1
     },
     "blaze": {
-      "learnTimes": 11,
-      "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1756799051608,
+      "learnTimes": 41,
+      "wrongTimes": 1,
+      "rightTimes": 2,
+      "lastTimestamp": 1757060583679,
       "lastStatus": 1
     },
     "rich": {
@@ -6630,24 +6630,535 @@
       "lastStatus": 1
     },
     "impulse": {
-      "learnTimes": 7,
+      "learnTimes": 15,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756798920038,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1756886310565,
+      "lastStatus": 1
     },
     "troops": {
-      "learnTimes": 13,
+      "learnTimes": 21,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1756799256861,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757057565207,
+      "lastStatus": 1
     },
     "flame": {
+      "learnTimes": 20,
+      "wrongTimes": 0,
+      "rightTimes": 3,
+      "lastTimestamp": 1757059222254,
+      "lastStatus": 1
+    },
+    "envy": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886192466,
+      "lastStatus": 1
+    },
+    "shelves": {
+      "learnTimes": 20,
+      "wrongTimes": 2,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060847118,
+      "lastStatus": 0
+    },
+    "hygienic": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756882223606,
+      "lastStatus": 1
+    },
+    "neighbor": {
       "learnTimes": 4,
       "wrongTimes": 0,
       "rightTimes": 1,
-      "lastTimestamp": 1756799436899,
+      "lastTimestamp": 1756883845923,
+      "lastStatus": 1
+    },
+    "shy": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756883965564,
+      "lastStatus": 1
+    },
+    "usually": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756884045134,
+      "lastStatus": 1
+    },
+    "rebound": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756882331621,
+      "lastStatus": 1
+    },
+    "override": {
+      "learnTimes": 15,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059602345,
+      "lastStatus": 1
+    },
+    "slide": {
+      "learnTimes": 12,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885996092,
+      "lastStatus": 1
+    },
+    "jog": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885298189,
+      "lastStatus": 1
+    },
+    "whenever": {
+      "learnTimes": 18,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756882913095,
+      "lastStatus": 1
+    },
+    "broke": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886029329,
+      "lastStatus": 1
+    },
+    "contradiction": {
+      "learnTimes": 15,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757061276016,
+      "lastStatus": 1
+    },
+    "soft": {
+      "learnTimes": 18,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060403705,
+      "lastStatus": 1
+    },
+    "fly": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756883917649,
+      "lastStatus": 1
+    },
+    "river": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885708021,
+      "lastStatus": 1
+    },
+    "monitor": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756883899934,
+      "lastStatus": 1
+    },
+    "thought": {
+      "learnTimes": 12,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756883957230,
+      "lastStatus": 1
+    },
+    "plant": {
+      "learnTimes": 21,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060452005,
+      "lastStatus": 1
+    },
+    "litte bit": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756883297386,
+      "lastStatus": 1
+    },
+    "facing": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885844530,
+      "lastStatus": 1
+    },
+    "modesty": {
+      "learnTimes": 19,
+      "wrongTimes": 2,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060419858,
+      "lastStatus": 0
+    },
+    "sharp": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756884307891,
+      "lastStatus": 1
+    },
+    "fell": {
+      "learnTimes": 26,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757057392392,
+      "lastStatus": 1
+    },
+    "count": {
+      "learnTimes": 18,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060367915,
+      "lastStatus": 1
+    },
+    "march": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886012743,
+      "lastStatus": 1
+    },
+    "glide": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885046486,
+      "lastStatus": 1
+    },
+    "effect": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885546372,
+      "lastStatus": 1
+    },
+    "doubt": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886121808,
+      "lastStatus": 1
+    },
+    "able": {
+      "learnTimes": 13,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060435458,
+      "lastStatus": 1
+    },
+    "meter": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885384529,
+      "lastStatus": 1
+    },
+    "umbrella": {
+      "learnTimes": 16,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885128706,
+      "lastStatus": 1
+    },
+    "simulate": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886073833,
+      "lastStatus": 1
+    },
+    "gallop": {
+      "learnTimes": 18,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058119099,
+      "lastStatus": 1
+    },
+    "bite": {
+      "learnTimes": 20,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059444991,
+      "lastStatus": 1
+    },
+    "closer": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885695665,
+      "lastStatus": 1
+    },
+    "prance": {
+      "learnTimes": 34,
+      "wrongTimes": 1,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060768729,
+      "lastStatus": 1
+    },
+    "lesson": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885972950,
+      "lastStatus": 1
+    },
+    "concert": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756885789507,
+      "lastStatus": 1
+    },
+    "hard": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1756886496218,
+      "lastStatus": 1
+    },
+    "orphan": {
+      "learnTimes": 8,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061296880,
+      "lastStatus": 0
+    },
+    "flat": {
+      "learnTimes": 17,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061240147,
+      "lastStatus": 0
+    },
+    "horror": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058849177,
+      "lastStatus": 1
+    },
+    "shame": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058239182,
+      "lastStatus": 1
+    },
+    "sneak": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757057759755,
+      "lastStatus": 1
+    },
+    "swim": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058530637,
+      "lastStatus": 1
+    },
+    "walk": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757057848895,
+      "lastStatus": 1
+    },
+    "bench": {
+      "learnTimes": 14,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059526532,
+      "lastStatus": 1
+    },
+    "rage": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058462897,
+      "lastStatus": 1
+    },
+    "dance": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058132222,
+      "lastStatus": 1
+    },
+    "stem": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061395712,
+      "lastStatus": 0
+    },
+    "supper": {
+      "learnTimes": 14,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058739467,
+      "lastStatus": 1
+    },
+    "tender": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060086136,
+      "lastStatus": 1
+    },
+    "dove": {
+      "learnTimes": 26,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061375347,
+      "lastStatus": 0
+    },
+    "daisy": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058446037,
+      "lastStatus": 1
+    },
+    "confront": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757058506937,
+      "lastStatus": 1
+    },
+    "mist": {
+      "learnTimes": 16,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060170736,
+      "lastStatus": 1
+    },
+    "sprint": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060336623,
+      "lastStatus": 0
+    },
+    "incident": {
+      "learnTimes": 18,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757059774101,
+      "lastStatus": 0
+    },
+    "pedal": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059178374,
+      "lastStatus": 1
+    },
+    "climb": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059765927,
+      "lastStatus": 1
+    },
+    "dive": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757059927470,
+      "lastStatus": 1
+    },
+    "spare": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060057846,
+      "lastStatus": 0
+    },
+    "plot": {
+      "learnTimes": 14,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061437276,
+      "lastStatus": 0
+    },
+    "pregnant": {
+      "learnTimes": 26,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061481274,
+      "lastStatus": 0
+    },
+    "hop": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060979252,
+      "lastStatus": 0
+    },
+    "flew": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060387371,
+      "lastStatus": 1
+    },
+    "dispute": {
+      "learnTimes": 14,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757060862130,
+      "lastStatus": 0
+    },
+    "puddle": {
+      "learnTimes": 14,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061482889,
+      "lastStatus": 0
+    },
+    "sigh": {
+      "learnTimes": 16,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757061230932,
+      "lastStatus": 0
+    },
+    "paddle": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060516146,
+      "lastStatus": 1
+    },
+    "revenge": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757060350881,
+      "lastStatus": 1
+    },
+    "row": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757061063275,
       "lastStatus": 1
     }
   },
@@ -19297,6 +19808,930 @@
           "beginAt": 1756799437256,
           "endedAt": 1756799588555,
           "passTime": 5,
+          "studyState": 1
+        }
+      ]
+    },
+    {
+      "id": 1756886530770,
+      "beginAt": 1756881046331,
+      "title": "81",
+      "list": [
+        {
+          "word": "armor",
+          "beginAt": 1756881060635,
+          "endedAt": 1756884010516,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "envy",
+          "beginAt": 1756881103028,
+          "endedAt": 1756886192466,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "shelves",
+          "beginAt": 1756881143373,
+          "endedAt": 1756883338890,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "hygienic",
+          "beginAt": 1756881184272,
+          "endedAt": 1756882223606,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "neighbor",
+          "beginAt": 1756881227830,
+          "endedAt": 1756883845923,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "shy",
+          "beginAt": 1756881249807,
+          "endedAt": 1756883965564,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "usually",
+          "beginAt": 1756881264966,
+          "endedAt": 1756884045134,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "rebound",
+          "beginAt": 1756881317374,
+          "endedAt": 1756882331621,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "revolution",
+          "beginAt": 1756881396220,
+          "endedAt": 1756882188968,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "override",
+          "beginAt": 1756881407014,
+          "endedAt": 1756886450971,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "summit",
+          "beginAt": 1756881438925,
+          "endedAt": 1756882528788,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "spear",
+          "beginAt": 1756881467250,
+          "endedAt": 1756884142443,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "slide",
+          "beginAt": 1756881497265,
+          "endedAt": 1756885996092,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "jog",
+          "beginAt": 1756881665591,
+          "endedAt": 1756885298189,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "whenever",
+          "beginAt": 1756881696775,
+          "endedAt": 1756882913095,
+          "passTime": 18,
+          "studyState": 1
+        },
+        {
+          "word": "troops",
+          "beginAt": 1756881791726,
+          "endedAt": 1756882490211,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "vibrate",
+          "beginAt": 1756881850597,
+          "endedAt": 1756884121016,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "impulse",
+          "beginAt": 1756881912647,
+          "endedAt": 1756886310565,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "broke",
+          "beginAt": 1756881950666,
+          "endedAt": 1756886029329,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "contradiction",
+          "beginAt": 1756881972958,
+          "endedAt": 1756883130078,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "blaze",
+          "beginAt": 1756882059175,
+          "endedAt": 1756885804192,
+          "passTime": 22,
+          "studyState": 0
+        },
+        {
+          "word": "until",
+          "beginAt": 1756882158521,
+          "endedAt": 1756883744639,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "soft",
+          "beginAt": 1756882224196,
+          "endedAt": 1756886348910,
+          "passTime": 12,
+          "studyState": 0
+        },
+        {
+          "word": "cliff",
+          "beginAt": 1756882254399,
+          "endedAt": 1756885083442,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "fly",
+          "beginAt": 1756882331949,
+          "endedAt": 1756883917649,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "river",
+          "beginAt": 1756882366828,
+          "endedAt": 1756885708021,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "warrior",
+          "beginAt": 1756882396873,
+          "endedAt": 1756883314269,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "monitor",
+          "beginAt": 1756882427907,
+          "endedAt": 1756883899934,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "thought",
+          "beginAt": 1756882529130,
+          "endedAt": 1756883957230,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "lightning",
+          "beginAt": 1756882574401,
+          "endedAt": 1756883721463,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "plant",
+          "beginAt": 1756882614054,
+          "endedAt": 1756886106708,
+          "passTime": 17,
+          "studyState": 0
+        },
+        {
+          "word": "litte bit",
+          "beginAt": 1756882679180,
+          "endedAt": 1756883297386,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "steep",
+          "beginAt": 1756882745154,
+          "endedAt": 1756883574528,
+          "passTime": 16,
+          "studyState": 1
+        },
+        {
+          "word": "because",
+          "beginAt": 1756882913465,
+          "endedAt": 1756883612535,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "facing",
+          "beginAt": 1756882969523,
+          "endedAt": 1756885844530,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "modesty",
+          "beginAt": 1756882996728,
+          "endedAt": 1756885143514,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "thunder",
+          "beginAt": 1756883130384,
+          "endedAt": 1756884387505,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "sharp",
+          "beginAt": 1756883158878,
+          "endedAt": 1756884307891,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "invasion",
+          "beginAt": 1756883219313,
+          "endedAt": 1756884371613,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "fell",
+          "beginAt": 1756883339197,
+          "endedAt": 1756885425806,
+          "passTime": 19,
+          "studyState": 0
+        },
+        {
+          "word": "count",
+          "beginAt": 1756883446953,
+          "endedAt": 1756885819901,
+          "passTime": 12,
+          "studyState": 0
+        },
+        {
+          "word": "withdraw",
+          "beginAt": 1756883507042,
+          "endedAt": 1756886482487,
+          "passTime": 12,
+          "studyState": 0
+        },
+        {
+          "word": "march",
+          "beginAt": 1756883612841,
+          "endedAt": 1756886012743,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "glide",
+          "beginAt": 1756883638517,
+          "endedAt": 1756885046486,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "effect",
+          "beginAt": 1756883745095,
+          "endedAt": 1756885546372,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "doubt",
+          "beginAt": 1756883772726,
+          "endedAt": 1756886121808,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "retreat",
+          "beginAt": 1756883796599,
+          "endedAt": 1756885251552,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "able",
+          "beginAt": 1756883846395,
+          "endedAt": 1756886529414,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "rational",
+          "beginAt": 1756884045445,
+          "endedAt": 1756884615900,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "apply",
+          "beginAt": 1756884142743,
+          "endedAt": 1756886516483,
+          "passTime": 13,
+          "studyState": 0
+        },
+        {
+          "word": "meter",
+          "beginAt": 1756884217643,
+          "endedAt": 1756885384529,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "knight",
+          "beginAt": 1756884308197,
+          "endedAt": 1756884541065,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "umbrella",
+          "beginAt": 1756884387994,
+          "endedAt": 1756885128706,
+          "passTime": 16,
+          "studyState": 1
+        },
+        {
+          "word": "rebel",
+          "beginAt": 1756884472597,
+          "endedAt": 1756885760174,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "yield",
+          "beginAt": 1756884616208,
+          "endedAt": 1756885444660,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "simulate",
+          "beginAt": 1756884688817,
+          "endedAt": 1756886073833,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "gallop",
+          "beginAt": 1756884886330,
+          "endedAt": 1756886203516,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "bite",
+          "beginAt": 1756885186335,
+          "endedAt": 1756886462318,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "closer",
+          "beginAt": 1756885251885,
+          "endedAt": 1756885695665,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "prance",
+          "beginAt": 1756885308496,
+          "endedAt": 1756886160211,
+          "passTime": 24,
+          "studyState": 0
+        },
+        {
+          "word": "lesson",
+          "beginAt": 1756885444991,
+          "endedAt": 1756885972950,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "boom",
+          "beginAt": 1756885469347,
+          "endedAt": 1756885734808,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "concert",
+          "beginAt": 1756885546686,
+          "endedAt": 1756885789507,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "flame",
+          "beginAt": 1756886203828,
+          "endedAt": 1756886383427,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "hard",
+          "beginAt": 1756886256322,
+          "endedAt": 1756886496218,
+          "passTime": 7,
+          "studyState": 1
+        }
+      ]
+    },
+    {
+      "id": 1757061484070,
+      "beginAt": 1757056387474,
+      "title": "81_82",
+      "list": [
+        {
+          "word": "armor",
+          "beginAt": 1757056389629,
+          "endedAt": 1757060654550,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "orphan",
+          "beginAt": 1757056416383,
+          "endedAt": 1757061296880,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "flat",
+          "beginAt": 1757056454040,
+          "endedAt": 1757061240147,
+          "passTime": 17,
+          "studyState": 0
+        },
+        {
+          "word": "shelves",
+          "beginAt": 1757056537557,
+          "endedAt": 1757060847118,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "fell",
+          "beginAt": 1757056564995,
+          "endedAt": 1757057392392,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "spear",
+          "beginAt": 1757056580269,
+          "endedAt": 1757058573216,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "horror",
+          "beginAt": 1757056631016,
+          "endedAt": 1757058849177,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "retreat",
+          "beginAt": 1757056661551,
+          "endedAt": 1757059796960,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "summit",
+          "beginAt": 1757056672272,
+          "endedAt": 1757056817493,
+          "passTime": 13,
+          "studyState": 1
+        },
+        {
+          "word": "flame",
+          "beginAt": 1757056736059,
+          "endedAt": 1757059222254,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "shame",
+          "beginAt": 1757056817813,
+          "endedAt": 1757058239182,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "sneak",
+          "beginAt": 1757056827122,
+          "endedAt": 1757057759755,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "swim",
+          "beginAt": 1757056866730,
+          "endedAt": 1757058530637,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "yield",
+          "beginAt": 1757056912359,
+          "endedAt": 1757061253712,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "walk",
+          "beginAt": 1757056956809,
+          "endedAt": 1757057848895,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "bench",
+          "beginAt": 1757056994693,
+          "endedAt": 1757059526532,
+          "passTime": 14,
+          "studyState": 1
+        },
+        {
+          "word": "troops",
+          "beginAt": 1757057023939,
+          "endedAt": 1757057565207,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "rage",
+          "beginAt": 1757057052875,
+          "endedAt": 1757058462897,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "dance",
+          "beginAt": 1757057077173,
+          "endedAt": 1757058132222,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "steep",
+          "beginAt": 1757057456612,
+          "endedAt": 1757059786903,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "stem",
+          "beginAt": 1757057493996,
+          "endedAt": 1757061395712,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "contradiction",
+          "beginAt": 1757057565529,
+          "endedAt": 1757061276016,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "warrior",
+          "beginAt": 1757057608525,
+          "endedAt": 1757058819495,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "bite",
+          "beginAt": 1757057630714,
+          "endedAt": 1757059444991,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "gallop",
+          "beginAt": 1757057646844,
+          "endedAt": 1757058119099,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "supper",
+          "beginAt": 1757057670404,
+          "endedAt": 1757058739467,
+          "passTime": 14,
+          "studyState": 1
+        },
+        {
+          "word": "tender",
+          "beginAt": 1757057760069,
+          "endedAt": 1757060086136,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "dove",
+          "beginAt": 1757057782958,
+          "endedAt": 1757061375347,
+          "passTime": 26,
+          "studyState": 0
+        },
+        {
+          "word": "withdraw",
+          "beginAt": 1757057849204,
+          "endedAt": 1757060320571,
+          "passTime": 15,
+          "studyState": 0
+        },
+        {
+          "word": "daisy",
+          "beginAt": 1757057919649,
+          "endedAt": 1757058446037,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "prance",
+          "beginAt": 1757058029265,
+          "endedAt": 1757060768729,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "override",
+          "beginAt": 1757058078545,
+          "endedAt": 1757059602345,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "confront",
+          "beginAt": 1757058132588,
+          "endedAt": 1757058506937,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "modesty",
+          "beginAt": 1757058191637,
+          "endedAt": 1757060419858,
+          "passTime": 8,
+          "studyState": 0
+        },
+        {
+          "word": "mist",
+          "beginAt": 1757058256617,
+          "endedAt": 1757060170736,
+          "passTime": 16,
+          "studyState": 1
+        },
+        {
+          "word": "sprint",
+          "beginAt": 1757058328950,
+          "endedAt": 1757060336623,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "incident",
+          "beginAt": 1757058367339,
+          "endedAt": 1757059774101,
+          "passTime": 18,
+          "studyState": 0
+        },
+        {
+          "word": "count",
+          "beginAt": 1757058463219,
+          "endedAt": 1757060367915,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "pedal",
+          "beginAt": 1757058573537,
+          "endedAt": 1757059178374,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "boom",
+          "beginAt": 1757058643387,
+          "endedAt": 1757059995224,
+          "passTime": 13,
+          "studyState": 1
+        },
+        {
+          "word": "climb",
+          "beginAt": 1757058849491,
+          "endedAt": 1757059765927,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "dive",
+          "beginAt": 1757058891706,
+          "endedAt": 1757059927470,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "plant",
+          "beginAt": 1757058910145,
+          "endedAt": 1757060452005,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "spare",
+          "beginAt": 1757058928829,
+          "endedAt": 1757060057846,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "thunder",
+          "beginAt": 1757058983333,
+          "endedAt": 1757061193535,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "plot",
+          "beginAt": 1757059075768,
+          "endedAt": 1757061437276,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "lightning",
+          "beginAt": 1757059178697,
+          "endedAt": 1757060289269,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "pregnant",
+          "beginAt": 1757059222583,
+          "endedAt": 1757061481274,
+          "passTime": 26,
+          "studyState": 0
+        },
+        {
+          "word": "hop",
+          "beginAt": 1757059281939,
+          "endedAt": 1757060979252,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "soft",
+          "beginAt": 1757059343508,
+          "endedAt": 1757060403705,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "knight",
+          "beginAt": 1757059367296,
+          "endedAt": 1757059648469,
+          "passTime": 12,
+          "studyState": 1
+        },
+        {
+          "word": "able",
+          "beginAt": 1757059445555,
+          "endedAt": 1757060435458,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "flew",
+          "beginAt": 1757059526844,
+          "endedAt": 1757060387371,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "dispute",
+          "beginAt": 1757059659123,
+          "endedAt": 1757060862130,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "puddle",
+          "beginAt": 1757059715818,
+          "endedAt": 1757061482889,
+          "passTime": 14,
+          "studyState": 0
+        },
+        {
+          "word": "apply",
+          "beginAt": 1757059797275,
+          "endedAt": 1757061208746,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "rebel",
+          "beginAt": 1757059927787,
+          "endedAt": 1757060466216,
+          "passTime": 6,
+          "studyState": 0
+        },
+        {
+          "word": "sigh",
+          "beginAt": 1757059995548,
+          "endedAt": 1757061230932,
+          "passTime": 16,
+          "studyState": 0
+        },
+        {
+          "word": "revolution",
+          "beginAt": 1757060058167,
+          "endedAt": 1757060594892,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "invasion",
+          "beginAt": 1757060086449,
+          "endedAt": 1757060935286,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "paddle",
+          "beginAt": 1757060186356,
+          "endedAt": 1757060516146,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "blaze",
+          "beginAt": 1757060229965,
+          "endedAt": 1757060583679,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "revenge",
+          "beginAt": 1757060289577,
+          "endedAt": 1757060350881,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "cliff",
+          "beginAt": 1757060466522,
+          "endedAt": 1757060904359,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "row",
+          "beginAt": 1757060769029,
+          "endedAt": 1757061063275,
+          "passTime": 8,
           "studyState": 1
         }
       ]

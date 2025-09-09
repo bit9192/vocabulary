@@ -25,3 +25,4 @@ dist-ssr
 .env
 
 PDF
+serve/ecdict/ecdict.json

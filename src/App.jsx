@@ -17,11 +17,6 @@ import VocabularyList from './pages/VocabularyList'
 import VocabularyConsole from './pages/VocabularyConsole'
 import Books from './pages/Books'
 
-import VirtualWindow from './pages/VirtualWindow'
-
-
-
-
 
 const router = [
   {
@@ -53,12 +48,6 @@ const router = [
     path: '/books',
     exact: true,
     element: <Books />
-  },
-  {
-    title: 'test',
-    path: '/test',
-    exact: true,
-    element: <VirtualWindow />
   },
   
 ]
