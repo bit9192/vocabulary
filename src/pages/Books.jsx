@@ -32,7 +32,9 @@ export default function Index() {
     } = useBooks()
 
     useEffect(() => {
-        SetPageOfUrl(visibleRange.endIndex*1)
+        if(visibleRange.endIndex*1 > 0) {
+            SetPageOfUrl(visibleRange.endIndex*1)
+        }
     }, [visibleRange.endIndex])
     return (
         page === null ?
