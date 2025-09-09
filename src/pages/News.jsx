@@ -144,8 +144,11 @@ function useSelect(title, text) {
                 // {
                 //     e: "dblclick",
                 //     call: el => {
-                //         Init()
+                //         const _start = GetIdOnTounch(el)
+                //         console.log(_start)
+                //         SetId(_start)
                 //         EimtMoveEnded()
+                //         Init()
                 //     }
                 // },
                 {
@@ -156,7 +159,7 @@ function useSelect(title, text) {
                         _longTouch = setTimeout(() => {
                             EimtChange()
                             _longTouch = 0
-                        }, 280)
+                        }, 300)
                     }
                 },
                 {
@@ -184,16 +187,16 @@ function useSelect(title, text) {
                     call: () => {
                        if (_longTouch >= 0) {
                             if (_longTouch > 0) {
-                                EimtChange()
-                                // Init()
-                                // EimtMoveEnded()
+                                // EimtChange()
+                                Init()
+                                EimtMoveEnded()
                             }
-                            // else {
-                            //     EimtMoveEnded()
-                            //     Init()
-                            // }
-                            EimtMoveEnded()
-                            Init()
+                            else {
+                                EimtMoveEnded()
+                                Init()
+                            }
+                            // EimtMoveEnded()
+                            // Init()
                             clearTimeout(_longTouch)
                             _longTouch = -1
                         }
