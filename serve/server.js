@@ -73,6 +73,32 @@ app.get('/api/translate', (c) => {
   return c.json(ecdict[word] || null)
 })
 
+
+// 代理 /api/translate 到本地 8000
+app.all('/translate', async (c) => {
+  const targetUrl = 'http://127.0.0.1:8000/translate'
+  const method = c.req.method
+  const body = method !== 'GET' && method !== 'HEAD' ? await c.req.text() : undefined
+
+  // 构造 headers
+  const headers = {
+    'content-type': c.req.header('content-type') || '',
+    'authorization': c.req.header('authorization') || '',
+    host: '127.0.0.1:8000'
+  }
+
+  const res = await fetch(targetUrl, { method, headers, body })
+
+  // 转发响应
+  const resHeaders = {}
+  res.headers.forEach((value, key) => {
+    resHeaders[key] = value
+  })
+
+  const text = await res.text()
+  return c.text(text, res.status, resHeaders)
+})
+
 serve(app, (info) => {
   console.log(`✅ Hono API running at http://localhost:${info.port}`)
 })

@@ -21,7 +21,7 @@ export async function TranslatorReq(text) {
 }
 
 // translate.js
-const API_URL = "/translate";
+const API_URL = "/db/translate";
 
 /**
  * 调用 LibreTranslate 翻译接口
