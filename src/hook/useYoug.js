@@ -25,10 +25,6 @@ import {
     GetAll
 } from '../api/api'
 
-import {
-    GetAllCache
-} from '../context/WordList'
-
 async function loadWidget(id = "widget-1") {
     const _on = {
         onFetchDone: () => {},

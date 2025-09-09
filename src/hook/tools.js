@@ -30,3 +30,14 @@ export function useReq({
     }
 
 }
+
+export function IsMobile() {
+  return /Mobi|Android|iPhone|iPad|iPod|Phone/i.test(navigator.userAgent);
+}
+
+export function SetPageOfUrl(currentPage) {
+    const params = new URLSearchParams(window.location.search);
+    params.set('p', currentPage);
+    const newUrl = `${window.location.pathname}?${params.toString()}`
+    window.history.replaceState({}, '', newUrl);
+}

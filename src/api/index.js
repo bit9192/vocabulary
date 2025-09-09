@@ -1,10 +1,10 @@
 // request.js
 
-const BASE_URL = 'http://localhost:3000' // 你后端的地址
+const BASE_URL = '/db' // 你后端的地址
 
-export async function get(url, params = {}) {
+export async function get(url, params = {}, _BASE_URL = BASE_URL) {
   const query = new URLSearchParams(params).toString()
-  const fullUrl = `${BASE_URL}${url}${query ? '?' + query : ''}`
+  const fullUrl = `${_BASE_URL}${url}${query ? '?' + query : ''}`
 
   const res = await fetch(fullUrl, {
     method: 'GET',
@@ -17,7 +17,7 @@ export async function get(url, params = {}) {
   return await res.json()
 }
 
-export async function post(url, data = {}) {
+export async function post(url, data = {}, _BASE_URL = BASE_URL) {
   const res = await fetch(`${BASE_URL}${url}`, {
     method: 'POST',
     headers: {

@@ -1,8 +1,12 @@
 // server.js
+import fs from 'fs';
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
 import { InitDBOnce, AddHistory, asyncDB } from './db.js'
 import { cors } from 'hono/cors'
+
+// import ecdict from './ecdict/ecdict.json' assert { type: 'json' }
+const ecdict = JSON.parse(fs.readFileSync('./ecdict/ecdict.json', 'utf-8'));
 
 const app = new Hono()
 app.use('*', cors())  // 允许跨域
@@ -62,6 +66,15 @@ app.post('/api/add', async (c) => {
   return c.json({result: [null, 0]})
 })
 
+
+app.get('/api/translate', (c) => {
+  // console.log(c, " c")
+  let word = c.req.query('n')
+  return c.json(ecdict[word] || null)
+})
+
 serve(app, (info) => {
   console.log(`✅ Hono API running at http://localhost:${info.port}`)
 })
+
+
