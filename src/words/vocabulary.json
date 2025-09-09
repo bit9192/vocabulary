@@ -691,7 +691,6 @@
     [
         "tire",
         "impulse",
-        "rational",
         "soft",
         "hard",
         "bite",
@@ -993,7 +992,6 @@
         "artificial",
         "intelligence",
         "digital",
-        "horror",
         "abilities",
         "influence",
         "revise",
@@ -1788,5 +1786,26 @@
         "warrior",
         "withdraw",
         "yield"
+    ],
+    [
+        "bench",
+        "confront",
+        "daisy",
+        "dispute",
+        "horror",
+        "incident",
+        "mist",
+        "orphan",
+        "plot",
+        "pregnant",
+        "rage",
+        "revenge",
+        "shame",
+        "sigh",
+        "sneak",
+        "spare",
+        "stem",
+        "supper",
+        "tender"
     ]
 ]
