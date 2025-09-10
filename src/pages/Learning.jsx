@@ -69,87 +69,90 @@ function WordsLearning() {
     // )
     return (
         <Container>
-            <WhiteSpace size='1.2' />
+            {/* <WhiteSpace size='1.2' /> */}
             <Curtain show={showWord}>
                 <Widget id='widget-1'>
                     --
                 </Widget>
             </Curtain>
             <WhiteSpace />
-            <TextM>{wordList.length || 0} - learning {doneWords[2]} - fails {doneWords[1]} - right {doneWords[3]}</TextM>
-            {/* 0 loading | -1 pause | 1 done */}
-            {
-                !word ? 
-                <WordsBlock
-                    style={{pointerEvents: loading !== 0 ? 'all' : 'none'}}
-                    onClick={() => {
-                        widgetRef.current.act.go()
-                    }}
-                >
-                    <TextMax>{loading === 0 ? "loading":"GO!"}</TextMax>
-                </WordsBlock>:
-                <WordsBlock onClick={showOrHide}>
-                    <TextMax>{showWord ? word : '--' }</TextMax>
-                </WordsBlock>
-            }
-            <WhiteSpace />
-            <div style={{opacity: loading === 0 || word === null ? 0.5 : 1}}>
-                <FlexDiv>
-                    <ControlButton onClick={() => widgetRef.current.act.prev()}>
-                        {'<'}
-                    </ControlButton>
-                    <ControlButton onClick={() => widgetRef.current.act.replay()}>
-                        replay
-                    </ControlButton>
-                    <ControlButton onClick={() => {
-                        if (loading === -1) {
-                            widgetRef.current.act.play()
-                        }
-                        else if (loading === 1) {
-                            widgetRef.current.act.pause()
-                        }
-                    }}>
-                        {loading === -1 ? 'play' : 'pause'}
-                    </ControlButton>
-                    <ControlButton onClick={() => widgetRef.current.act.next()}>
-                        {'>'}
-                    </ControlButton>
-                </FlexDiv>
+            <div style={{background: "#fff"}}>
+                <WhiteSpace size='1.4' />
+                <TextM>{wordList.length || 0} - learning {doneWords[2]} - fails {doneWords[1]} - right {doneWords[3]}</TextM>
+                {/* 0 loading | -1 pause | 1 done */}
+                {
+                    !word ? 
+                    <WordsBlock
+                        style={{pointerEvents: loading !== 0 ? 'all' : 'none'}}
+                        onClick={() => {
+                            widgetRef.current.act.go()
+                        }}
+                    >
+                        <TextMax>{loading === 0 ? "loading":"GO!"}</TextMax>
+                    </WordsBlock>:
+                    <WordsBlock onClick={showOrHide}>
+                        <TextMax>{showWord ? word : '--' }</TextMax>
+                    </WordsBlock>
+                }
                 <WhiteSpace />
-                
-                {/* <WhiteSpace /> */}
-                <FlexDiv>
-                    <ControlButton onClick={() => widgetRef.current.act.previousWord()}>
-                        pre word
-                    </ControlButton>
-                    {/* <ControlButton onClick={showOrHide}>
-                        {showWord ? 'hide' : 'show'}
-                    </ControlButton> */}
+                <div style={{opacity: loading === 0 || word === null ? 0.5 : 1}}>
+                    <FlexDiv>
+                        <ControlButton onClick={() => widgetRef.current.act.prev()}>
+                            {'<'}
+                        </ControlButton>
+                        <ControlButton onClick={() => widgetRef.current.act.replay()}>
+                            replay
+                        </ControlButton>
+                        <ControlButton onClick={() => {
+                            if (loading === -1) {
+                                widgetRef.current.act.play()
+                            }
+                            else if (loading === 1) {
+                                widgetRef.current.act.pause()
+                            }
+                        }}>
+                            {loading === -1 ? 'play' : 'pause'}
+                        </ControlButton>
+                        <ControlButton onClick={() => widgetRef.current.act.next()}>
+                            {'>'}
+                        </ControlButton>
+                    </FlexDiv>
+                    <WhiteSpace />
                     
-                    <ControlButton onClick={() => widgetRef.current.act.nextWord(1)}>
-                        next word 1
-                    </ControlButton>
-                    <ControlButton onClick={() => widgetRef.current.act.nextWord(0)}>
-                        next word 0 
-                    </ControlButton>
-                    <ControlButton onClick={() => widgetRef.current.act.done(0)}>
-                        Done
-                    </ControlButton>
+                    {/* <WhiteSpace /> */}
+                    <FlexDiv>
+                        <ControlButton onClick={() => widgetRef.current.act.previousWord()}>
+                            pre word
+                        </ControlButton>
+                        {/* <ControlButton onClick={showOrHide}>
+                            {showWord ? 'hide' : 'show'}
+                        </ControlButton> */}
+                        
+                        <ControlButton onClick={() => widgetRef.current.act.nextWord(1)}>
+                            next word 1
+                        </ControlButton>
+                        <ControlButton onClick={() => widgetRef.current.act.nextWord(0)}>
+                            next word 0 
+                        </ControlButton>
+                        <ControlButton onClick={() => widgetRef.current.act.done(0)}>
+                            Done
+                        </ControlButton>
+                    </FlexDiv>
+                </div>
+                <WhiteSpace size='14' />
+
+                <FlexDiv style={{flexWrap: 'wrap', display: showWord ? 'flex' : 'none'}}>
+                    {
+                        wordList.map(v =>
+                            <WordBlock
+                                key={v.word}
+                                onClick={()=> widgetRef.current.act.getWords(v.word)}
+                                active={v.word === word}
+                            >{v.word}</WordBlock>
+                        )
+                    }
                 </FlexDiv>
             </div>
-            <WhiteSpace size='14' />
-
-            <FlexDiv style={{flexWrap: 'wrap', display: showWord ? 'flex' : 'none'}}>
-                {
-                    wordList.map(v =>
-                        <WordBlock
-                            key={v.word}
-                            onClick={()=> widgetRef.current.act.getWords(v.word)}
-                            active={v.word === word}
-                        >{v.word}</WordBlock>
-                    )
-                }
-            </FlexDiv>
             <WhiteSpace size='3' />
         </Container>
     )
@@ -195,6 +198,9 @@ const Widget = styled('div')`
 
 const Curtain = styled('div')`
     position: relative;
+    margin-bottom: -220px !important;
+    overflow: hidden;
+    z-index: -1;
     &::after {
         content: '';
         position: absolute;
