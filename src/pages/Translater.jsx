@@ -86,6 +86,27 @@ export function PopoverCard({value = false, children}) {
     );
 }
 
+
+export function PopoverTranslator({target, text}) {
+    
+    // const [open, setOpen] = useState(false)
+    // useEffect(() => {
+    //     const open = target !== null &&  text !== ""
+    //     setOpen(open)
+    // }, [target, text])
+    const open = target !== null && text !== ""
+    return (
+        <Popper
+            open={open}
+            anchorEl={target}
+            // onClose={onClose}
+            popperOptions="auto"
+        >
+            <TranslatorCard text={text} />
+        </Popper>
+    )
+}
+
 const withCard = IsMobile() ? window.innerWidth - 10 : 460
 export function TranslatorCard({text}) {
     // results is asynchronously cause popper unable to calculated correctly size

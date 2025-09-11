@@ -15,7 +15,10 @@ import Words from './pages/Learning'
 import VocabularyList from './pages/VocabularyList'
 // import News from './pages/News'
 import VocabularyConsole from './pages/VocabularyConsole'
-import Books from './pages/Books'
+import Books from './pages/NewBooks'
+
+import Selector from './pages/Selector'
+
 
 
 const router = [
@@ -48,6 +51,12 @@ const router = [
     path: '/books',
     exact: true,
     element: <Books />
+  },
+  {
+    title: 'tests',
+    path: '/tests',
+    exact: true,
+    element: <Selector />
   },
   
 ]

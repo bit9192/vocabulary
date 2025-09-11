@@ -287,7 +287,9 @@ function useSelect(title, text) {
                         }
                         else if (_longTouch > 0) {
                             clearTimeout(_longTouch)
+                            console.log("fast mouseleave", _longTouch)
                             Init()
+                            EimtMoveEnded()
                             _longTouch = -1
                         }
                     }
