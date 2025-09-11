@@ -6525,11 +6525,11 @@
       "lastStatus": 1
     },
     "thunder": {
-      "learnTimes": 31,
+      "learnTimes": 35,
       "wrongTimes": 2,
-      "rightTimes": 2,
-      "lastTimestamp": 1757488176706,
-      "lastStatus": 0
+      "rightTimes": 3,
+      "lastTimestamp": 1757575058641,
+      "lastStatus": 1
     },
     "knight": {
       "learnTimes": 48,
@@ -6553,11 +6553,11 @@
       "lastStatus": 1
     },
     "spear": {
-      "learnTimes": 37,
+      "learnTimes": 46,
       "wrongTimes": 1,
-      "rightTimes": 3,
-      "lastTimestamp": 1757490072032,
-      "lastStatus": 0
+      "rightTimes": 4,
+      "lastTimestamp": 1757574371110,
+      "lastStatus": 1
     },
     "steep": {
       "learnTimes": 58,
@@ -6798,11 +6798,11 @@
       "lastStatus": 1
     },
     "modesty": {
-      "learnTimes": 27,
+      "learnTimes": 33,
       "wrongTimes": 3,
-      "rightTimes": 0,
-      "lastTimestamp": 1757490365219,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574263728,
+      "lastStatus": 1
     },
     "sharp": {
       "learnTimes": 11,
@@ -6931,11 +6931,11 @@
       "lastStatus": 1
     },
     "orphan": {
-      "learnTimes": 15,
+      "learnTimes": 20,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489856783,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574184528,
+      "lastStatus": 1
     },
     "flat": {
       "learnTimes": 23,
@@ -6945,25 +6945,25 @@
       "lastStatus": 1
     },
     "horror": {
-      "learnTimes": 13,
+      "learnTimes": 15,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1757486558866,
+      "rightTimes": 3,
+      "lastTimestamp": 1757574022080,
       "lastStatus": 1
     },
     "shame": {
-      "learnTimes": 9,
+      "learnTimes": 12,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1757487178182,
+      "rightTimes": 3,
+      "lastTimestamp": 1757574270512,
       "lastStatus": 1
     },
     "sneak": {
-      "learnTimes": 8,
+      "learnTimes": 12,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757489999316,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757573791162,
+      "lastStatus": 1
     },
     "swim": {
       "learnTimes": 8,
@@ -6980,17 +6980,17 @@
       "lastStatus": 1
     },
     "bench": {
-      "learnTimes": 31,
+      "learnTimes": 40,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757489316707,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757572407065,
+      "lastStatus": 1
     },
     "rage": {
-      "learnTimes": 18,
+      "learnTimes": 29,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1757487307012,
+      "rightTimes": 3,
+      "lastTimestamp": 1757575086872,
       "lastStatus": 1
     },
     "dance": {
@@ -7001,25 +7001,25 @@
       "lastStatus": 1
     },
     "stem": {
-      "learnTimes": 23,
+      "learnTimes": 34,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489187850,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757575459716,
+      "lastStatus": 1
     },
     "supper": {
-      "learnTimes": 28,
+      "learnTimes": 38,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757488852139,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757572485897,
+      "lastStatus": 1
     },
     "tender": {
-      "learnTimes": 12,
+      "learnTimes": 16,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757489770780,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757574783095,
+      "lastStatus": 1
     },
     "dove": {
       "learnTimes": 41,
@@ -7029,24 +7029,24 @@
       "lastStatus": 1
     },
     "daisy": {
-      "learnTimes": 31,
+      "learnTimes": 39,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757490142957,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757574293666,
+      "lastStatus": 1
     },
     "confront": {
-      "learnTimes": 15,
+      "learnTimes": 17,
       "wrongTimes": 1,
-      "rightTimes": 1,
-      "lastTimestamp": 1757490349980,
-      "lastStatus": 0
+      "rightTimes": 2,
+      "lastTimestamp": 1757572692593,
+      "lastStatus": 1
     },
     "mist": {
-      "learnTimes": 22,
+      "learnTimes": 33,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1757490384030,
+      "rightTimes": 3,
+      "lastTimestamp": 1757572309980,
       "lastStatus": 1
     },
     "sprint": {
@@ -7057,11 +7057,11 @@
       "lastStatus": 1
     },
     "incident": {
-      "learnTimes": 26,
+      "learnTimes": 30,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489516710,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757573110788,
+      "lastStatus": 1
     },
     "pedal": {
       "learnTimes": 5,
@@ -7085,25 +7085,25 @@
       "lastStatus": 1
     },
     "spare": {
-      "learnTimes": 18,
+      "learnTimes": 25,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757490190414,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574662611,
+      "lastStatus": 1
     },
     "plot": {
-      "learnTimes": 23,
+      "learnTimes": 28,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757490229909,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574642484,
+      "lastStatus": 1
     },
     "pregnant": {
-      "learnTimes": 33,
+      "learnTimes": 40,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489806423,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757575220561,
+      "lastStatus": 1
     },
     "hop": {
       "learnTimes": 15,
@@ -7120,11 +7120,11 @@
       "lastStatus": 1
     },
     "dispute": {
-      "learnTimes": 24,
+      "learnTimes": 32,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757490127984,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574750745,
+      "lastStatus": 1
     },
     "puddle": {
       "learnTimes": 20,
@@ -7134,11 +7134,11 @@
       "lastStatus": 1
     },
     "sigh": {
-      "learnTimes": 32,
+      "learnTimes": 43,
       "wrongTimes": 2,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489212162,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574060030,
+      "lastStatus": 1
     },
     "paddle": {
       "learnTimes": 4,
@@ -7148,10 +7148,10 @@
       "lastStatus": 1
     },
     "revenge": {
-      "learnTimes": 11,
+      "learnTimes": 17,
       "wrongTimes": 0,
-      "rightTimes": 2,
-      "lastTimestamp": 1757488217103,
+      "rightTimes": 3,
+      "lastTimestamp": 1757575489014,
       "lastStatus": 1
     },
     "row": {
@@ -7169,18 +7169,18 @@
       "lastStatus": 1
     },
     "sail": {
-      "learnTimes": 11,
+      "learnTimes": 14,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489486422,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757575093993,
+      "lastStatus": 1
     },
     "spin": {
-      "learnTimes": 13,
+      "learnTimes": 21,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489298210,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574508190,
+      "lastStatus": 1
     },
     "ride": {
       "learnTimes": 9,
@@ -7225,11 +7225,11 @@
       "lastStatus": 1
     },
     "consent": {
-      "learnTimes": 18,
+      "learnTimes": 26,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757490210507,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574856005,
+      "lastStatus": 1
     },
     "deserve": {
       "learnTimes": 6,
@@ -7239,11 +7239,11 @@
       "lastStatus": 1
     },
     "rotate": {
-      "learnTimes": 8,
+      "learnTimes": 12,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757489822472,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1757574430984,
+      "lastStatus": 1
     },
     "turn": {
       "learnTimes": 7,
@@ -7257,6 +7257,244 @@
       "wrongTimes": 0,
       "rightTimes": 1,
       "lastTimestamp": 1757490377079,
+      "lastStatus": 1
+    },
+    "offer": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757574328962,
+      "lastStatus": 0
+    },
+    "catch": {
+      "learnTimes": 10,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757574566814,
+      "lastStatus": 0
+    },
+    "throw": {
+      "learnTimes": 12,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757572323703,
+      "lastStatus": 0
+    },
+    "drag": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574095489,
+      "lastStatus": 1
+    },
+    "punch": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757572657551,
+      "lastStatus": 1
+    },
+    "lift": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757572376865,
+      "lastStatus": 1
+    },
+    "kick": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575050179,
+      "lastStatus": 1
+    },
+    "need": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574553652,
+      "lastStatus": 1
+    },
+    "stretch": {
+      "learnTimes": 7,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757573055691,
+      "lastStatus": 0
+    },
+    "hold": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575113154,
+      "lastStatus": 1
+    },
+    "scoop": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575235828,
+      "lastStatus": 1
+    },
+    "tackle": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573276321,
+      "lastStatus": 1
+    },
+    "try": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573399448,
+      "lastStatus": 1
+    },
+    "seem": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573422329,
+      "lastStatus": 1
+    },
+    "swing": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573336163,
+      "lastStatus": 1
+    },
+    "flex": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573950384,
+      "lastStatus": 1
+    },
+    "move": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574893903,
+      "lastStatus": 1
+    },
+    "pivot": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574800794,
+      "lastStatus": 1
+    },
+    "hug": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574341021,
+      "lastStatus": 1
+    },
+    "hope": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574601339,
+      "lastStatus": 1
+    },
+    "strike": {
+      "learnTimes": 20,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574014820,
+      "lastStatus": 1
+    },
+    "bend": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574621766,
+      "lastStatus": 1
+    },
+    "push": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757573929614,
+      "lastStatus": 1
+    },
+    "kiss": {
+      "learnTimes": 9,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574578522,
+      "lastStatus": 1
+    },
+    "shuffle": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574437745,
+      "lastStatus": 1
+    },
+    "haul": {
+      "learnTimes": 22,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757575274271,
+      "lastStatus": 0
+    },
+    "pitch": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574539072,
+      "lastStatus": 1
+    },
+    "prepare": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575121298,
+      "lastStatus": 1
+    },
+    "shift": {
+      "learnTimes": 6,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1757575476718,
+      "lastStatus": 0
+    },
+    "virtual": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575285204,
+      "lastStatus": 1
+    },
+    "tend": {
+      "learnTimes": 7,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757574999671,
+      "lastStatus": 1
+    },
+    "pull": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575359213,
+      "lastStatus": 1
+    },
+    "clasp": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575414527,
+      "lastStatus": 1
+    },
+    "hit": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1757575494661,
       "lastStatus": 1
     }
   },
@@ -21257,6 +21495,433 @@
           "beginAt": 1757490252764,
           "endedAt": 1757490384030,
           "passTime": 6,
+          "studyState": 1
+        }
+      ]
+    },
+    {
+      "id": 1757575496249,
+      "beginAt": 1757571561431,
+      "title": "82",
+      "list": [
+        {
+          "word": "bench",
+          "beginAt": 1757571599451,
+          "endedAt": 1757572407065,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "offer",
+          "beginAt": 1757571635159,
+          "endedAt": 1757574328962,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "catch",
+          "beginAt": 1757571698002,
+          "endedAt": 1757574566814,
+          "passTime": 10,
+          "studyState": 0
+        },
+        {
+          "word": "throw",
+          "beginAt": 1757571741379,
+          "endedAt": 1757572323703,
+          "passTime": 12,
+          "studyState": 0
+        },
+        {
+          "word": "mist",
+          "beginAt": 1757571816810,
+          "endedAt": 1757572309980,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "drag",
+          "beginAt": 1757571889706,
+          "endedAt": 1757574095489,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "confront",
+          "beginAt": 1757571980219,
+          "endedAt": 1757572692593,
+          "passTime": 2,
+          "studyState": 1
+        },
+        {
+          "word": "punch",
+          "beginAt": 1757571988849,
+          "endedAt": 1757572657551,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "lift",
+          "beginAt": 1757572018527,
+          "endedAt": 1757572376865,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "stem",
+          "beginAt": 1757572037875,
+          "endedAt": 1757575459716,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "kick",
+          "beginAt": 1757572124249,
+          "endedAt": 1757575050179,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "incident",
+          "beginAt": 1757572170694,
+          "endedAt": 1757573110788,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "supper",
+          "beginAt": 1757572202622,
+          "endedAt": 1757572485897,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "need",
+          "beginAt": 1757572268275,
+          "endedAt": 1757574553652,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "spear",
+          "beginAt": 1757572324015,
+          "endedAt": 1757574371110,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "stretch",
+          "beginAt": 1757572407379,
+          "endedAt": 1757573055691,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "hold",
+          "beginAt": 1757572431341,
+          "endedAt": 1757575113154,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "scoop",
+          "beginAt": 1757572486224,
+          "endedAt": 1757575235828,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "orphan",
+          "beginAt": 1757572520843,
+          "endedAt": 1757574184528,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "sneak",
+          "beginAt": 1757572538252,
+          "endedAt": 1757573791162,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "sail",
+          "beginAt": 1757572575588,
+          "endedAt": 1757575093993,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "sigh",
+          "beginAt": 1757572601429,
+          "endedAt": 1757574060030,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "tackle",
+          "beginAt": 1757572692910,
+          "endedAt": 1757573276321,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "dispute",
+          "beginAt": 1757572739779,
+          "endedAt": 1757574750745,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "try",
+          "beginAt": 1757572813444,
+          "endedAt": 1757573399448,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "daisy",
+          "beginAt": 1757572877606,
+          "endedAt": 1757574293666,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "seem",
+          "beginAt": 1757572954558,
+          "endedAt": 1757573422329,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "modesty",
+          "beginAt": 1757573055999,
+          "endedAt": 1757574263728,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "swing",
+          "beginAt": 1757573111337,
+          "endedAt": 1757573336163,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "flex",
+          "beginAt": 1757573160862,
+          "endedAt": 1757573950384,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "move",
+          "beginAt": 1757573249945,
+          "endedAt": 1757574893903,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "pivot",
+          "beginAt": 1757573276630,
+          "endedAt": 1757574800794,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "pregnant",
+          "beginAt": 1757573284178,
+          "endedAt": 1757575220561,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "hug",
+          "beginAt": 1757573336477,
+          "endedAt": 1757574341021,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "spin",
+          "beginAt": 1757573342050,
+          "endedAt": 1757574508190,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "hope",
+          "beginAt": 1757573422659,
+          "endedAt": 1757574601339,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "rotate",
+          "beginAt": 1757573466358,
+          "endedAt": 1757574430984,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "strike",
+          "beginAt": 1757573478925,
+          "endedAt": 1757574014820,
+          "passTime": 20,
+          "studyState": 1
+        },
+        {
+          "word": "bend",
+          "beginAt": 1757573630863,
+          "endedAt": 1757574621766,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "shame",
+          "beginAt": 1757573668771,
+          "endedAt": 1757574270512,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "push",
+          "beginAt": 1757573688099,
+          "endedAt": 1757573929614,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "kiss",
+          "beginAt": 1757573791477,
+          "endedAt": 1757574578522,
+          "passTime": 9,
+          "studyState": 1
+        },
+        {
+          "word": "shuffle",
+          "beginAt": 1757573829938,
+          "endedAt": 1757574437745,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "plot",
+          "beginAt": 1757573862103,
+          "endedAt": 1757574642484,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "spare",
+          "beginAt": 1757573895591,
+          "endedAt": 1757574662611,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "horror",
+          "beginAt": 1757573909752,
+          "endedAt": 1757574022080,
+          "passTime": 2,
+          "studyState": 1
+        },
+        {
+          "word": "haul",
+          "beginAt": 1757574095794,
+          "endedAt": 1757575274271,
+          "passTime": 22,
+          "studyState": 0
+        },
+        {
+          "word": "pitch",
+          "beginAt": 1757574184842,
+          "endedAt": 1757574539072,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "tender",
+          "beginAt": 1757574508511,
+          "endedAt": 1757574783095,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "consent",
+          "beginAt": 1757574662919,
+          "endedAt": 1757574856005,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "prepare",
+          "beginAt": 1757574751073,
+          "endedAt": 1757575121298,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "shift",
+          "beginAt": 1757574856321,
+          "endedAt": 1757575476718,
+          "passTime": 6,
+          "studyState": 0
+        },
+        {
+          "word": "virtual",
+          "beginAt": 1757574894218,
+          "endedAt": 1757575285204,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "tend",
+          "beginAt": 1757574915016,
+          "endedAt": 1757574999671,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "rage",
+          "beginAt": 1757574949279,
+          "endedAt": 1757575086872,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "pull",
+          "beginAt": 1757574985450,
+          "endedAt": 1757575359213,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "thunder",
+          "beginAt": 1757574999987,
+          "endedAt": 1757575058641,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "clasp",
+          "beginAt": 1757575300695,
+          "endedAt": 1757575414527,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "revenge",
+          "beginAt": 1757575328705,
+          "endedAt": 1757575489014,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "hit",
+          "beginAt": 1757575359545,
+          "endedAt": 1757575494661,
+          "passTime": 5,
           "studyState": 1
         }
       ]
