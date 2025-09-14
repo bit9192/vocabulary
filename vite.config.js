@@ -16,7 +16,11 @@ export default defineConfig({
     port: 5173,  // 可自定义端口
     proxy: {
       '/translate': 'http://localhost:8000',
-      '/api': 'http://localhost:3000'
+      '/api': {
+        target: 'http://localhost:3000',
+        changeOrigin: true,
+        rewrite: path => path.replace(/^\/api/, '')  // 去掉 /translate 前缀
+      }
     }
   }
 })

@@ -13,12 +13,12 @@ const rootsList = JSON.parse(fs.readFileSync('./rootsList.json', 'utf-8'));
 const app = new Hono()
 app.use('*', cors())  // 允许跨域
 
-app.get('/api/wordList', async (c) => {
+app.get('/wordList', async (c) => {
   const db = await asyncDB()
   return c.json(db.data.words)
 })
 
-app.get('/api/recent', async (c) => {
+app.get('/recent', async (c) => {
   let wordsCount = c.req.query('n')
   const db = await asyncDB()
   let len = db.data.history.length
@@ -56,7 +56,7 @@ app.get('/api/recent', async (c) => {
   )
 })
 
-app.post('/api/add', async (c) => {
+app.post('/add', async (c) => {
   const body = await c.req.json()
   const newItem = { id: Date.now(), ...body }
   const db = await asyncDB()
@@ -71,14 +71,14 @@ app.post('/api/add', async (c) => {
 
 // text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
 //         console.log(wor)
-app.get('/api/translate', (c) => {
+app.get('/translate', (c) => {
   // console.log(c, " c")
   let word = c.req.query('n')
   // const roots = SplitWord(word)
   return c.json(ecdict[word] || null)
 })
 
-app.post('/api/translate', async (c) => {
+app.post('/translate', async (c) => {
   const {text} = await c.req.json()
   const word = text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
   const ecdictDetail = ecdict[word]
