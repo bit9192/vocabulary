@@ -4,6 +4,7 @@ import Card from '@mui/material/Card';
 // import CardContent from '@mui/material/CardContent';
 // import Typography from '@mui/material/Typography';
 import Popper from '@mui/material/Popper';
+import Divider from '@mui/material/Divider';
 
 import CampaignIcon from '@mui/icons-material/Campaign';
 import { styled } from '@mui/material/styles';
@@ -24,7 +25,7 @@ import {
 } from "../components"
 
 
-
+const isMobile = IsMobile()
 export function PopoverCard({value = false, children}) {
     const xtRef = useRef(null)
     const popperRef = useRef(null)
@@ -86,15 +87,9 @@ export function PopoverCard({value = false, children}) {
     );
 }
 
+export function PopoverTranslator({target, text, moveEnd}) {
+    const open = target !== null &&  text !== "" && moveEnd
 
-export function PopoverTranslator({target, text}) {
-    
-    // const [open, setOpen] = useState(false)
-    // useEffect(() => {
-    //     const open = target !== null &&  text !== ""
-    //     setOpen(open)
-    // }, [target, text])
-    const open = target !== null && text !== ""
     return (
         <Popper
             open={open}
@@ -107,26 +102,34 @@ export function PopoverTranslator({target, text}) {
     )
 }
 
-const withCard = IsMobile() ? window.innerWidth - 10 : 460
+const withCard = isMobile ? window.innerWidth - 24 : 460
 export function TranslatorCard({text}) {
+    const refTime = useRef(null)
     // results is asynchronously cause popper unable to calculated correctly size
     const {
         results,
+        roots,
         type,
         trans,
         // speak
     } = useTranslate()
     useEffect(() => {
         if (text) {
-            trans(text)
+            clearTimeout(refTime.current)
+            refTime.current = setTimeout(() => {
+                trans(text)
+                refTime.current = null
+            }, 50)
+            
         }
     }, [text, trans])
 
-    // console.log(results)
+    // console.log(roots, type," ds", type === 1 && roots && roots?.length)
+    // console.log(results, results?.trans, " results.trans.")
     return (
         <Card sx={{
             padding: "2px 12px",
-            width:  withCard + "px"
+            width:  withCard + "px",
         }}>
             <div>
                 <TextM
@@ -146,7 +149,7 @@ export function TranslatorCard({text}) {
             {
                 results ?
                 type === 0 ?
-                    <DictionaryEntry entry={results}/>:
+                    <DictionaryEntry entry={results.translation || results}/>:
                     <TextM
                         style={{
                             maxWidth: "100%",
@@ -154,12 +157,25 @@ export function TranslatorCard({text}) {
                             color: "#4e4e4e"
                         }}
                     >
-                        {results}
+                        {results.translation || results}
                     </TextM>
                 :
                 <TextM>
                     loading...
                 </TextM>
+            }
+            {
+                roots && roots?.length > 0 ?
+                <>
+                    <Divider />
+                    {
+                        roots.filter(v => v.k).map(v => {
+                            console.log(v.v, )
+                            return <div key={v.v}>{v.v} - {v.k.def}</div>
+                        })
+                    }
+                </>
+                : null
             }
         </Card>
     )

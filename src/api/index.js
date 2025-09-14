@@ -1,6 +1,6 @@
 // request.js
 
-const BASE_URL = '/db' // 你后端的地址
+const BASE_URL = '/api' // 你后端的地址
 
 export async function get(url, params = {}, _BASE_URL = BASE_URL) {
   const query = new URLSearchParams(params).toString()

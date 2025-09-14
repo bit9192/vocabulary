@@ -27,6 +27,7 @@ import {
 
 
 export default function Index() {
+
     const [visibleRange, setVisibleRange] = useState({
         startIndex: 0,
         endIndex: 0,
@@ -44,8 +45,6 @@ export default function Index() {
         }
     }, [visibleRange.endIndex])
 
-
-
     const {
         ref,
         startPage,
@@ -55,18 +54,9 @@ export default function Index() {
         onSelected,
         endTarget,
         text,
+        moveEnd
     } = useSelectorListener()
 
-    console.log(
-        startPage,
-        endPage,
-        startIdx,
-        endIdx,
-    )
-    console.log(
-        endTarget,
-        text,
-    )
     return (
         <>
             <div ref={ref}>
@@ -82,7 +72,12 @@ export default function Index() {
                             itemContent={(page) => {
                                 const content = all()[page]
                                 return (
-                                    <div>
+                                    <div
+                                        style={{
+                                            padding: "12px",
+                                            background: "rgb(255 254 248)"
+                                        }}
+                                    >
                                         {
                                             content.images.length > 0 ?
                                             content.images.map((v,i) => <Imgs key={i} src={"data:image/png;base64,"+v}/>)
@@ -113,6 +108,7 @@ export default function Index() {
             <PopoverTranslator
                 target={endTarget}
                 text={text}
+                moveEnd={moveEnd}
             />
         </>
         

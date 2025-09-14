@@ -3,20 +3,20 @@ import {get, post} from './index'
 import VOCABULARY_LIST from '../words/vocabulary.json'
 
 export function AddLesson(_lesson) {
-    return post('/api/add', _lesson)
+    return post('/add', _lesson)
 }
 
 
 export function GetRecent(num) {
-    return get('/api/recent?n='+num)
+    return get('/recent?n='+num)
 }
 
 export function GetAll() {
-    return get('/api/wordList')
+    return get('/wordList')
 }
 
-export function Translate(n) {
-    return get('/api/translate?n='+n)
+export function Translate({text} = {}) {
+    return post('/translate', {text})
 }
 
 // word list controller

@@ -72,6 +72,8 @@ export function Select({text, page=0, startPage = null, endPage = null, startIdx
         ExtractSelectedText
     } = useSelect(text)
 
+    // console.log(" span render")
+
     useEffect(() => {
         let s,e;
         if (startPage === null && endPage === null) {
@@ -99,11 +101,8 @@ export function Select({text, page=0, startPage = null, endPage = null, startIdx
             }
             setSelectedIdex([s, e])
         }
-    },[page, startPage, endPage, startIdx, endIdx])
-
-    useEffect(() => {
         onSelected(page, ExtractSelectedText(s,e))
-    }, [s,e, onSelected, ExtractSelectedText])
+    },[page, startPage, endPage, startIdx, endIdx, onSelected, ExtractSelectedText])
     
     return (
         parts.map((part,i) => (
@@ -130,24 +129,25 @@ export function Select({text, page=0, startPage = null, endPage = null, startIdx
 }
 
 
-const GetIdOnTounchDataset = e => {
+const GetIdOnTounchElement = e => {
     const touch = e.touches[0];
     const el = document.elementFromPoint(touch.clientX, touch.clientY);
-    return el.dataset
+    return el
 }
 const INIT = {
     startPage: null,
     endPage: null,
     startIdx: null,
-    endIdx: null
+    endIdx: null,
+    target: null,
+    moveEnd: false
 }
 function useSelectListener() {
 
     const ref = useRef(null)
-
     const [
         {
-            startPage, endPage, startIdx, endIdx
+            startPage, endPage, startIdx, endIdx, target, moveEnd
         },
         setIdx
     ] = useState(INIT)
@@ -156,17 +156,19 @@ function useSelectListener() {
         GetPage,
         InitPage,
         SetData,
-        SetPage,
+        RenderPage,
         SelectEnd
     } = useMemo(() => {
-        let _start,_end;
+        let _start, _end, _target, _moveEnd;
         const InitPage  = () => {
             _start = {page: null, id: null}
             _end = {page: null, id: null}
+            _target = null
+            _moveEnd = false
         }
         InitPage()
-        const SetPage = () => {
-            
+        const RenderPage = () => {
+            // console.log("RenderPage", _end, _target)
             setIdx(v => {
                 const newV = GetPage()
                 // console.log(v, newV, ShallowEqual(newV, v))
@@ -178,17 +180,21 @@ function useSelectListener() {
                 }
             })
         }
-        const SetData = dataset => {
+        const SetData = (el) => {
+            const dataset = el.dataset
             if (!dataset.page) return
             let {page, id} = dataset
             page = page * 1
             id = id * 1
             if (!_start.page && _start.page !== 0) _start = {page, id}
             _end = {page, id}
+            _target = el
+            _moveEnd = false
         }
+
         const SelectEnd = () => {
-            SetPage()
-            // SetSelectEnd(v => v + 1)
+            _moveEnd = true
+            RenderPage()
         }
         const GetPage = () => {
             if (_start.page > _end.page) {
@@ -196,14 +202,18 @@ function useSelectListener() {
                     startPage: _end.page,
                     startIdx: _end.id,
                     endPage: _start.page,
-                    endIdx: _start.id
+                    endIdx: _start.id,
+                    target: _target,
+                    moveEnd: _moveEnd
                 }
             } else {
                 return {
                     startPage: _start.page,
                     startIdx: _start.id,
                     endPage: _end.page,
-                    endIdx: _end.id
+                    endIdx: _end.id,
+                    target: _target,
+                    moveEnd: _moveEnd
                 }
             }
             
@@ -212,7 +222,7 @@ function useSelectListener() {
             GetPage,
             InitPage,
             SetData,
-            SetPage,
+            RenderPage,
             SelectEnd
         }
     }, [])
@@ -235,12 +245,13 @@ function useSelectListener() {
                             _longTouch = -2;
                             return
                         }
+                        // SetMoveEnd(0)
                         InitPage()
-                        const _startDataset = GetIdOnTounchDataset(el)
-                        SetData(_startDataset)
-                        // SetId(_start)
+
+                        const element = GetIdOnTounchElement(el)
+                        SetData(element)
                         _longTouch = setTimeout(() => {
-                            SetPage()
+                            RenderPage()
                             _longTouch = 0
                         }, 300)
                     }
@@ -262,9 +273,9 @@ function useSelectListener() {
                         // _longTouch === 0 Equivalent longtocuh >= 200
                         else if (_longTouch === 0) {
                             el.preventDefault()
-                            const _startDataset = GetIdOnTounchDataset(el)
-                            SetData(_startDataset)
-                            SetPage()
+                            const element = GetIdOnTounchElement(el)
+                            SetData(element)
+                            RenderPage()
                         }
                     }
                 },
@@ -273,13 +284,13 @@ function useSelectListener() {
                     call: () => {
                         if (_longTouch >= 0) {
                             // = click
-                            SetPage()
+                            SelectEnd()
                             clearTimeout(_longTouch)
                             _longTouch = -1
                         }
                         else if (_longTouch === -2) {
                             InitPage()
-                            SetPage()
+                            SelectEnd()
                             _longTouch = -1
                         }
                     }
@@ -299,7 +310,8 @@ function useSelectListener() {
                             InitPage()
                             return
                         }
-                        SetData(_startDataset)
+                        // SetMoveEnd(0)
+                        SetData(el.target)
                         SelectEnd()
                         InitPage()
                     }
@@ -313,7 +325,7 @@ function useSelectListener() {
                             InitPage()
                             return
                         }
-                        SetData(_startDataset)
+                        SetData(el.target)
                         // prevent click
                         _longTouch = setTimeout(() => {
                             _longTouch = 0
@@ -326,8 +338,8 @@ function useSelectListener() {
                         if (_longTouch === -1) return
                         const _endDataset = el.target.dataset
                         if (_endDataset !== undefined) {
-                            SetData(_endDataset)
-                            SetPage()
+                            SetData(el.target)
+                            RenderPage()
                             if (_longTouch > 0) {
                                 clearTimeout(_longTouch)
                                 _longTouch = 0
@@ -341,7 +353,7 @@ function useSelectListener() {
                         if (_longTouch === 0) {
                             const _endDataset = el.target.dataset
                             if (_endDataset !== undefined) {
-                                SetData(_endDataset)
+                                SetData(el.target)
                             }
                             SelectEnd()
                             InitPage()
@@ -362,7 +374,7 @@ function useSelectListener() {
                         if (_longTouch !== -1) {
                             const _endDataset = el.target.dataset
                             if (_endDataset !== undefined) {
-                                SetData(_endDataset)
+                                SetData(el.target)
                             }
                             SelectEnd()
                             InitPage()
@@ -396,13 +408,15 @@ function useSelectListener() {
             })
         }
         
-    }, [InitPage, SetData, SelectEnd, SetPage, GetPage])
+    }, [InitPage, SetData, SelectEnd, RenderPage, GetPage])
     return {
         ref,
+        target,
         startPage,
         endPage,
         startIdx,
         endIdx,
+        moveEnd,
         GetPage,
         InitPage,
     }
@@ -412,13 +426,18 @@ function useSelectListener() {
 export function useSelectorListener() {
     const {
         ref,
+        target,
         startPage,
         endPage,
         startIdx,
-        endIdx
+        endIdx,
+        moveEnd
     } = useSelectListener()
 
-    const {onSelected, Texts, InitTexts} = useMemo(() => {
+    const [text, onMoveEnd] = useState("")
+    // render flow order : 
+    // startPage change -> parent render[page change] -> span render[page change] -> onSelected -> span render[page]
+    const {onSelected} = useMemo(() => {
         let _texts = {}
         const onSelected = (page, text) => {
             if (text.length > 0) {
@@ -427,122 +446,28 @@ export function useSelectorListener() {
             else {
                 delete _texts[page]
             }
+            const t = Texts()
+            onMoveEnd(t)
         }
+        const Texts = () => Object.values(_texts).flat().join(" ")
         return {
             onSelected,
-            Texts: () => {
-                return Object.values(_texts).flat().join(" ")
-            },
+            Texts,
             InitTexts: () => _texts = {}
         }
     }, [])
 
-    const [{endTarget, text}, onMoveEnd] = useState({endTarget: null, text: ""})
-
-    useEffect(() => {
-        let _endTarget;
-        const setTaret = el => {
-            const target = el.target
-            if (target.dataset.page) {
-                _endTarget = target
-                return true
-            }
-            return false
-        }
-
-        const EmitEnd = () => {
-            onMoveEnd({endTarget: _endTarget, text: Texts()})
-            InitTexts()
-            // releaf
-            _endTarget = null
-        }
-
-        let events = [] // isMobile ? "touchend" : "mouseup"
-        if (isMobile) {
-            events = [
-                {
-                    e: "touchstart",
-                    call: (el) => {
-                        if (!setTaret(el)) {
-                            _endTarget = null
-                        }
-                    }
-                },
-                {
-                    e: "touchmove",
-                    call: (el) => {
-                        setTaret(el)
-                    }
-                },
-                {
-                    e: "touchend",
-                    call: () => {
-                        EmitEnd()
-                    }
-                },
-                
-            ]
-        } else {
-            events = [
-                {
-                    e: "mousedown",
-                    call: (el) => {
-                        if (!setTaret(el)) {
-                            _endTarget = null
-                        }
-                    }
-                },
-                {
-                    e: "mouseover",
-                    call: (el) => {
-                        setTaret(el)
-                    }
-                },
-                {
-                    e: "mouseup",
-                    call: () => {
-                        EmitEnd()
-                    }
-                },
-                {
-                    e: "mouseleave",
-                    call: () => {
-                        EmitEnd()
-                    }
-                }
-            ]
-        }
-        events.forEach(event => {
-            if (ref.current) {
-                ref.current.addEventListener(
-                    event.e,
-                    event.call,
-                    { passive: event.e === "touchmove" ? false : true }
-                )
-            }
-        })
-
-        return () => {
-            events.forEach(event => {
-                if (ref.current) {
-                    ref.current.removeEventListener(
-                        event.e,
-                        event.call
-                    )
-                }
-                
-            })
-        }
-    }, [Texts, InitTexts])
-
+    // console.log(text, " parent render")
+    
     return {
         ref,
         startPage,
         endPage,
         startIdx,
         endIdx,
-        endTarget,
+        endTarget: target,
         text,
+        moveEnd,
         onSelected
     }
 }
@@ -554,6 +479,7 @@ export function EelectorListener({View = () => null, onMoveEnd = () => {}, ...po
         endPage,
         startIdx,
         endIdx,
+        moveEnd,
         onSelected,
         endTarget,
         text,
@@ -561,6 +487,7 @@ export function EelectorListener({View = () => null, onMoveEnd = () => {}, ...po
     onMoveEnd(
         endTarget,
         text,
+        moveEnd
     )
     return (
         <div
@@ -618,11 +545,11 @@ const ContextBlock = styled('div')`
     flex-wrap: wrap;
     user-select: none;
     -webkit-user-select: none;
-    /* font-size: 22px; */
+    font-size: 22px;
     white-space: normal;
     padding-bottom: 22px;
     & div {
-        padding: 2px 12px 2px 0px;
+        padding: 4px 14px 4px 0px;
         user-select: none;
         -webkit-user-select: none;
         /* margin-right: 6px; */

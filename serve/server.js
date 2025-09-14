@@ -6,7 +6,9 @@ import { InitDBOnce, AddHistory, asyncDB } from './db.js'
 import { cors } from 'hono/cors'
 
 // import ecdict from './ecdict/ecdict.json' assert { type: 'json' }
-const ecdict = JSON.parse(fs.readFileSync('./ecdict/ecdict.json', 'utf-8'));
+const ecdict = JSON.parse(fs.readFileSync('./data/ecdict.json', 'utf-8'));
+const rootsLookup = JSON.parse(fs.readFileSync('./rootsLookup.json', 'utf-8'));
+const rootsList = JSON.parse(fs.readFileSync('./rootsList.json', 'utf-8'));
 
 const app = new Hono()
 app.use('*', cors())  // 允许跨域
@@ -67,36 +69,45 @@ app.post('/api/add', async (c) => {
 })
 
 
+// text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
+//         console.log(wor)
 app.get('/api/translate', (c) => {
   // console.log(c, " c")
   let word = c.req.query('n')
+  // const roots = SplitWord(word)
   return c.json(ecdict[word] || null)
 })
 
-
-// 代理 /api/translate 到本地 8000
-app.all('/translate', async (c) => {
-  const targetUrl = 'http://127.0.0.1:8000/translate'
-  const method = c.req.method
-  const body = method !== 'GET' && method !== 'HEAD' ? await c.req.text() : undefined
-
-  // 构造 headers
-  const headers = {
-    'content-type': c.req.header('content-type') || '',
-    'authorization': c.req.header('authorization') || '',
-    host: '127.0.0.1:8000'
+app.post('/api/translate', async (c) => {
+  const {text} = await c.req.json()
+  const word = text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
+  const ecdictDetail = ecdict[word]
+  if (ecdictDetail) {
+    const res = rootsLookup[word]
+    if (!res) {
+      return c.json({
+        detail: ecdictDetail,
+        roots: []
+      })
+    }
+    const roots = res.split(" ")
+    return c.json({
+      detail: ecdictDetail,
+      roots: roots.map(v => {
+        const k = v.replaceAll("#", "")
+        return {
+          v,
+          k: rootsList[k]
+        }
+      })
+    })
   }
-
-  const res = await fetch(targetUrl, { method, headers, body })
-
-  // 转发响应
-  const resHeaders = {}
-  res.headers.forEach((value, key) => {
-    resHeaders[key] = value
-  })
-
-  const text = await res.text()
-  return c.text(text, res.status, resHeaders)
+  else {
+    const res = await translateProxy(text, "en-zh")
+    return c.json({
+      trans: res
+    })
+  }
 })
 
 serve(app, (info) => {
@@ -104,3 +115,22 @@ serve(app, (info) => {
 })
 
 
+export async function translateProxy(text, direction) {
+  try {
+    const response = await fetch("http://localhost:8000/translate", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ text, direction }),
+    });
+
+    if (!response.ok) {
+      throw new Error(`请求失败: ${response.status}`);
+    }
+
+    const data = await response.json();
+    return data;
+  } catch (err) {
+    console.error("代理请求出错:", err);
+    return { error: err.message };
+  }
+}

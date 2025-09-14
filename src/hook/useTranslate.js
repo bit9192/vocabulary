@@ -1,8 +1,7 @@
 import { useState, useCallback, useRef} from "react";
 
 import {
-    TranslatorReq,
-    TranslateLocal
+    TranslatorReq
 } from "../api/translater"
 
 import {Search} from "../api/news"
@@ -10,11 +9,13 @@ import {Search} from "../api/news"
 
 export function useTranslate() {
     const [results, setResults] = useState(null)
+    const [roots, setRoots] = useState([])
     const [type, setType] = useState(null)
 
     const trans = useCallback(async (text) => {
         setResults(null)
         const r = await TranslatorReq(text)
+        setRoots(r.roots)
         setResults(r.content)
         setType(r.type)
     },[])
@@ -29,6 +30,7 @@ export function useTranslate() {
 
     return {
         type,
+        roots,
         results,
         trans,
         speak
