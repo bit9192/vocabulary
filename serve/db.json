@@ -6560,11 +6560,11 @@
       "lastStatus": 1
     },
     "steep": {
-      "learnTimes": 82,
+      "learnTimes": 86,
       "wrongTimes": 3,
-      "rightTimes": 3,
-      "lastTimestamp": 1757925364409,
-      "lastStatus": 0
+      "rightTimes": 4,
+      "lastTimestamp": 1758009436435,
+      "lastStatus": 1
     },
     "yield": {
       "learnTimes": 37,
@@ -7435,11 +7435,11 @@
       "lastStatus": 1
     },
     "haul": {
-      "learnTimes": 53,
+      "learnTimes": 64,
       "wrongTimes": 3,
-      "rightTimes": 0,
-      "lastTimestamp": 1757924530507,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758008810075,
+      "lastStatus": 1
     },
     "pitch": {
       "learnTimes": 8,
@@ -7505,11 +7505,11 @@
       "lastStatus": 1
     },
     "flexible": {
-      "learnTimes": 9,
+      "learnTimes": 14,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757922937607,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758008124816,
+      "lastStatus": 1
     },
     "phrase": {
       "learnTimes": 5,
@@ -7568,11 +7568,11 @@
       "lastStatus": 1
     },
     "permissive": {
-      "learnTimes": 12,
+      "learnTimes": 18,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757923324920,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758010008946,
+      "lastStatus": 1
     },
     "provide": {
       "learnTimes": 9,
@@ -7610,129 +7610,290 @@
       "lastStatus": 1
     },
     "beneath": {
-      "learnTimes": 15,
+      "learnTimes": 20,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757925466662,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758007300609,
+      "lastStatus": 1
     },
     "howl": {
-      "learnTimes": 5,
+      "learnTimes": 9,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757924522873,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009355394,
       "lastStatus": 1
     },
     "cub": {
-      "learnTimes": 9,
+      "learnTimes": 16,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757924021414,
+      "rightTimes": 2,
+      "lastTimestamp": 1758010155189,
       "lastStatus": 1
     },
     "dissatisfied": {
-      "learnTimes": 3,
+      "learnTimes": 7,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757924333122,
+      "rightTimes": 2,
+      "lastTimestamp": 1758007401505,
       "lastStatus": 1
     },
     "seize": {
-      "learnTimes": 9,
+      "learnTimes": 14,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757924191277,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009818625,
       "lastStatus": 1
     },
     "supreme": {
-      "learnTimes": 25,
+      "learnTimes": 30,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757925445649,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758009971369,
+      "lastStatus": 1
     },
     "leap": {
-      "learnTimes": 7,
+      "learnTimes": 11,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757924242796,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009826516,
       "lastStatus": 1
     },
     "pile": {
-      "learnTimes": 9,
+      "learnTimes": 13,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757925231218,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009799908,
       "lastStatus": 1
     },
     "terrific": {
-      "learnTimes": 21,
+      "learnTimes": 34,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757925419693,
-      "lastStatus": 0
-    },
-    "magnificent": {
-      "learnTimes": 9,
-      "wrongTimes": 0,
       "rightTimes": 1,
-      "lastTimestamp": 1757924734776,
+      "lastTimestamp": 1758008457745,
       "lastStatus": 1
     },
-    "ease": {
-      "learnTimes": 7,
-      "wrongTimes": 0,
+    "magnificent": {
+      "learnTimes": 16,
+      "wrongTimes": 1,
       "rightTimes": 1,
-      "lastTimestamp": 1757925205558,
+      "lastTimestamp": 1758010102061,
+      "lastStatus": 0
+    },
+    "ease": {
+      "learnTimes": 21,
+      "wrongTimes": 0,
+      "rightTimes": 2,
+      "lastTimestamp": 1758006983426,
       "lastStatus": 1
     },
     "necessity": {
-      "learnTimes": 17,
-      "wrongTimes": 1,
+      "learnTimes": 34,
+      "wrongTimes": 2,
       "rightTimes": 0,
-      "lastTimestamp": 1757925437716,
+      "lastTimestamp": 1758009985674,
       "lastStatus": 0
     },
     "dawn": {
-      "learnTimes": 20,
+      "learnTimes": 30,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757924818263,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758008215000,
+      "lastStatus": 1
     },
     "vital": {
-      "learnTimes": 18,
+      "learnTimes": 29,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757925045664,
+      "rightTimes": 2,
+      "lastTimestamp": 1758007695062,
       "lastStatus": 1
     },
     "hail": {
-      "learnTimes": 5,
+      "learnTimes": 10,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757925247340,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009927272,
       "lastStatus": 1
     },
     "trait": {
-      "learnTimes": 10,
+      "learnTimes": 17,
       "wrongTimes": 1,
-      "rightTimes": 0,
-      "lastTimestamp": 1757925172064,
-      "lastStatus": 0
+      "rightTimes": 1,
+      "lastTimestamp": 1758007824165,
+      "lastStatus": 1
     },
     "evident": {
-      "learnTimes": 6,
+      "learnTimes": 11,
       "wrongTimes": 0,
-      "rightTimes": 1,
-      "lastTimestamp": 1757925161373,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009663175,
       "lastStatus": 1
     },
     "squeeze": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 2,
+      "lastTimestamp": 1758009582134,
+      "lastStatus": 1
+    },
+    "hurried": {
+      "learnTimes": 7,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1758010027534,
+      "lastStatus": 0
+    },
+    "strict": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758010067340,
+      "lastStatus": 1
+    },
+    "helpful": {
+      "learnTimes": 3,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009591513,
+      "lastStatus": 1
+    },
+    "quality": {
+      "learnTimes": 11,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1758008484548,
+      "lastStatus": 0
+    },
+    "nurse": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758008135866,
+      "lastStatus": 1
+    },
+    "smooth": {
+      "learnTimes": 6,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758007417170,
+      "lastStatus": 1
+    },
+    "interest": {
+      "learnTimes": 10,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758010140784,
+      "lastStatus": 1
+    },
+    "character": {
       "learnTimes": 5,
       "wrongTimes": 0,
       "rightTimes": 1,
-      "lastTimestamp": 1757925254939,
+      "lastTimestamp": 1758007442652,
+      "lastStatus": 1
+    },
+    "principal": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758007534235,
+      "lastStatus": 1
+    },
+    "excess": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758007768735,
+      "lastStatus": 1
+    },
+    "press": {
+      "learnTimes": 13,
+      "wrongTimes": 1,
+      "rightTimes": 0,
+      "lastTimestamp": 1758010189387,
+      "lastStatus": 0
+    },
+    "expensive": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758007906387,
+      "lastStatus": 1
+    },
+    "poor": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009399609,
+      "lastStatus": 1
+    },
+    "excise": {
+      "learnTimes": 15,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009259155,
+      "lastStatus": 1
+    },
+    "salary": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758008464909,
+      "lastStatus": 1
+    },
+    "thin": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009787190,
+      "lastStatus": 1
+    },
+    "survey": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009998062,
+      "lastStatus": 1
+    },
+    "enough": {
+      "learnTimes": 11,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758008858930,
+      "lastStatus": 1
+    },
+    "useless": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758010054379,
+      "lastStatus": 1
+    },
+    "purse": {
+      "learnTimes": 18,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009551973,
+      "lastStatus": 1
+    },
+    "capital": {
+      "learnTimes": 8,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009948314,
+      "lastStatus": 1
+    },
+    "mature": {
+      "learnTimes": 5,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758009672468,
+      "lastStatus": 1
+    },
+    "sufficient": {
+      "learnTimes": 4,
+      "wrongTimes": 0,
+      "rightTimes": 1,
+      "lastTimestamp": 1758010109349,
       "lastStatus": 1
     }
   },
@@ -22756,6 +22917,328 @@
           "endedAt": 1757925364409,
           "passTime": 12,
           "studyState": 0
+        }
+      ]
+    },
+    {
+      "id": 1758010190872,
+      "beginAt": 1757997500186,
+      "title": "83",
+      "list": [
+        {
+          "word": "beneath",
+          "beginAt": 1758006778541,
+          "endedAt": 1758007300609,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "ease",
+          "beginAt": 1758006792258,
+          "endedAt": 1758006983426,
+          "passTime": 14,
+          "studyState": 1
+        },
+        {
+          "word": "hurried",
+          "beginAt": 1758006882565,
+          "endedAt": 1758010027534,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "strict",
+          "beginAt": 1758006983735,
+          "endedAt": 1758010067340,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "helpful",
+          "beginAt": 1758007035719,
+          "endedAt": 1758009591513,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "quality",
+          "beginAt": 1758007044619,
+          "endedAt": 1758008484548,
+          "passTime": 11,
+          "studyState": 0
+        },
+        {
+          "word": "nurse",
+          "beginAt": 1758007074108,
+          "endedAt": 1758008135866,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "smooth",
+          "beginAt": 1758007087268,
+          "endedAt": 1758007417170,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "interest",
+          "beginAt": 1758007159905,
+          "endedAt": 1758010140784,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "haul",
+          "beginAt": 1758007211249,
+          "endedAt": 1758008810075,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "dissatisfied",
+          "beginAt": 1758007300927,
+          "endedAt": 1758007401505,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "character",
+          "beginAt": 1758007317387,
+          "endedAt": 1758007442652,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "principal",
+          "beginAt": 1758007443230,
+          "endedAt": 1758007534235,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "vital",
+          "beginAt": 1758007460931,
+          "endedAt": 1758007695062,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "excess",
+          "beginAt": 1758007534546,
+          "endedAt": 1758007768735,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "flexible",
+          "beginAt": 1758007589846,
+          "endedAt": 1758008124816,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "steep",
+          "beginAt": 1758007608619,
+          "endedAt": 1758009436435,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "press",
+          "beginAt": 1758007623754,
+          "endedAt": 1758010189387,
+          "passTime": 13,
+          "studyState": 0
+        },
+        {
+          "word": "trait",
+          "beginAt": 1758007650388,
+          "endedAt": 1758007824165,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "expensive",
+          "beginAt": 1758007695386,
+          "endedAt": 1758007906387,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "supreme",
+          "beginAt": 1758007769039,
+          "endedAt": 1758009971369,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "howl",
+          "beginAt": 1758007906709,
+          "endedAt": 1758009355394,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "squeeze",
+          "beginAt": 1758007927496,
+          "endedAt": 1758009582134,
+          "passTime": 3,
+          "studyState": 1
+        },
+        {
+          "word": "poor",
+          "beginAt": 1758007936759,
+          "endedAt": 1758009399609,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "excise",
+          "beginAt": 1758007952134,
+          "endedAt": 1758009259155,
+          "passTime": 15,
+          "studyState": 1
+        },
+        {
+          "word": "necessity",
+          "beginAt": 1758008000574,
+          "endedAt": 1758009985674,
+          "passTime": 17,
+          "studyState": 0
+        },
+        {
+          "word": "dawn",
+          "beginAt": 1758008028547,
+          "endedAt": 1758008215000,
+          "passTime": 10,
+          "studyState": 1
+        },
+        {
+          "word": "terrific",
+          "beginAt": 1758008066047,
+          "endedAt": 1758008457745,
+          "passTime": 13,
+          "studyState": 1
+        },
+        {
+          "word": "salary",
+          "beginAt": 1758008136175,
+          "endedAt": 1758008464909,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "thin",
+          "beginAt": 1758008235678,
+          "endedAt": 1758009787190,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "leap",
+          "beginAt": 1758008251054,
+          "endedAt": 1758009826516,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "evident",
+          "beginAt": 1758008268033,
+          "endedAt": 1758009663175,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "survey",
+          "beginAt": 1758008283596,
+          "endedAt": 1758009998062,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "cub",
+          "beginAt": 1758008484857,
+          "endedAt": 1758010155189,
+          "passTime": 7,
+          "studyState": 1
+        },
+        {
+          "word": "enough",
+          "beginAt": 1758008515782,
+          "endedAt": 1758008858930,
+          "passTime": 11,
+          "studyState": 1
+        },
+        {
+          "word": "useless",
+          "beginAt": 1758008810393,
+          "endedAt": 1758010054379,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "purse",
+          "beginAt": 1758009259469,
+          "endedAt": 1758009551973,
+          "passTime": 18,
+          "studyState": 1
+        },
+        {
+          "word": "hail",
+          "beginAt": 1758009400177,
+          "endedAt": 1758009927272,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "capital",
+          "beginAt": 1758009461540,
+          "endedAt": 1758009948314,
+          "passTime": 8,
+          "studyState": 1
+        },
+        {
+          "word": "seize",
+          "beginAt": 1758009552273,
+          "endedAt": 1758009818625,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "mature",
+          "beginAt": 1758009591816,
+          "endedAt": 1758009672468,
+          "passTime": 5,
+          "studyState": 1
+        },
+        {
+          "word": "pile",
+          "beginAt": 1758009672781,
+          "endedAt": 1758009799908,
+          "passTime": 4,
+          "studyState": 1
+        },
+        {
+          "word": "magnificent",
+          "beginAt": 1758009719454,
+          "endedAt": 1758010102061,
+          "passTime": 7,
+          "studyState": 0
+        },
+        {
+          "word": "permissive",
+          "beginAt": 1758009861872,
+          "endedAt": 1758010008946,
+          "passTime": 6,
+          "studyState": 1
+        },
+        {
+          "word": "sufficient",
+          "beginAt": 1758010027843,
+          "endedAt": 1758010109349,
+          "passTime": 4,
+          "studyState": 1
         }
       ]
     }
