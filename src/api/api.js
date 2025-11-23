@@ -1,6 +1,7 @@
 
 import {get, post} from './index'
 import VOCABULARY_LIST from '../words/vocabulary.json'
+import { GetBays } from '../hook/tools'
 
 export function AddLesson(_lesson) {
     return post('/add', _lesson)
@@ -22,29 +23,35 @@ export function Translate({text} = {}) {
 // word list controller
 let _INIT = null
 async function Init() {
+    const {
+        hours
+    } = GetBays()
     const wordList = await GetAll()
     // console.log({wordList})
-    return VOCABULARY_LIST.map(list => {
+    return VOCABULARY_LIST.map((list, lesson) => {
         return list.map(word => {
             if (!wordList[word]) {
                 return {
                     word,
+                    sicnceLastStudyHours: 0,
                     lastTimestamp: -1,
                     lastStatus: 0,
                     learnTimes: 0,
                     rightTimes: 0,
-                    wrongTimes: 0
+                    wrongTimes: 0,
+                    lesson
                 }
             }
             return {
                 word,
-                ...wordList[word]
+                ...wordList[word],
+                sicnceLastStudyHours: hours(wordList[word].lastTimestamp)
             }
         })
     })
 }
 
-export function GetInit() {
+export function GetInit() { 
     const refresh = async () => {
         _INIT = await Init()
         return _INIT

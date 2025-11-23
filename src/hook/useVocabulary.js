@@ -26,6 +26,13 @@ export function useWordsList() {
     })
 }
 
+// export function useWordsSelector() {
+//     const words = useWordsList()
+//     const filter = useCallback(() => {
+        
+//     }, [words])
+// }
+
 export function getVocabularyByIndex(arg) {
     const list = []
     // console.log(arg)

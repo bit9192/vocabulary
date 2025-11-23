@@ -4,7 +4,8 @@ import {
     getRandomIndex
 } from '../hook/useVocabulary'
 
-import styled from 'styled-components'
+import { styled } from '@mui/material/styles';
+
 import {
     TextM,
     TextL,

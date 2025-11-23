@@ -19,6 +19,8 @@ import Books from './pages/NewBooks'
 
 import Selector from './pages/Selector'
 
+import LessonSelect from './pages/WordsList'
+
 
 
 const router = [
@@ -56,7 +58,9 @@ const router = [
     title: 'tests',
     path: '/tests',
     exact: true,
-    element: <Selector />
+    // element: <Selector />
+    element: <LessonSelect />
+    
   },
   
 ]

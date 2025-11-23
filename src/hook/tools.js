@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 
+// type = data type
 export function useReq({
     type,
     call = () => type,
@@ -51,4 +52,26 @@ export function ShallowEqual(obj1, obj2) {
   if (keys1.length !== keys2.length) return false;
 
   return keys1.every(key => obj1[key] === obj2[key]);
+}
+
+
+export const GetBays = () => {
+    const now = Date.now()
+    const hours = timestamp => {
+        const diffMs = now - timestamp;
+
+        if (diffMs < 0) return "未来的时间"; // 防止传未来时间
+
+        const diffHours = Math.floor(diffMs / (1000 * 60 * 60));
+        return diffHours
+    }
+    const daysWithHours = diffHours => {
+        const days = Math.floor(diffHours / 24);
+        const hours = diffHours % 24;
+        return [days, hours]
+    }
+    return {
+        hours,
+        daysWithHours
+    }
 }
