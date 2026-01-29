@@ -39,7 +39,20 @@ export async function TranslatorReq(text) {
         const textType = Constlassify(text)
         let wor = null
         if (textType === "word") {
-          wor = await TranslateWord({text: CleanInput(text)})
+          const _text = CleanInput(text)
+          console.log('cleaned text', _text, _text.length)
+          if (_text.length === 0) {
+            wor = { 
+              result: {
+                mean: "输入无效",
+                n: "-",
+                roots: []
+              }
+            }
+          }
+          else {
+            wor = await TranslateWord({text: _text})
+          }
         }
         else {
           wor = await TranslateSentence({text})
