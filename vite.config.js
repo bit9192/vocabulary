@@ -5,6 +5,10 @@ import { plugin as markdown } from 'vite-plugin-markdown';
 
 // https://vite.dev/config/
 export default defineConfig({
+  base: './',          // ⭐ 必须：相对路径，手机/子路径不炸
+  build: {
+    outDir: 'dist',
+  },
   plugins: [
     react(),
     markdown({
@@ -13,6 +17,7 @@ export default defineConfig({
   ],
   server: {
     host: true,  // 必须，监听局域网所有地址
+    allowedHosts: true,
     port: 5173,  // 可自定义端口
     proxy: {
       '/translate': 'http://localhost:8000',

@@ -185,7 +185,7 @@ function DictionaryEntry({ entry }) {
       <TextM style={{display:'block', color:'#404040'}}>/{entry.n}/</TextM> 
       <TextM style={{display:'block'}}>{entry.mean}</TextM>
       {entry.roots.map((root, index) => {
-        return <TextS key={index} style={{display:'block', color: "#606060" }}>{root[0]} : {root[1]}</TextS>;
+        return <TextM key={index} style={{display:'block', color: "#606060" }}>{root[0]} : {root[1]}</TextM>;
       })}
     </div>
   );

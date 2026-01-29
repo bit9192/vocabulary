@@ -65,6 +65,7 @@ export default function Index() {
                     <Animations /> :
                     <div style={{position: 'relative'}}>
                         <Virtuoso
+                            defaultItemHeight={460}
                             initialTopMostItemIndex={currentPage}
                             style={{ height: '100vh' }}
                             totalCount={pages}
