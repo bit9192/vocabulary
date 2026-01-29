@@ -2,13 +2,14 @@
 import fs from 'fs';
 import { Hono } from 'hono'
 import { serve } from '@hono/node-server'
-import { InitDBOnce, AddHistory, asyncDB } from './db.js'
 import { cors } from 'hono/cors'
 
+import { InitDBOnce, AddHistory, asyncDB } from './db.js'
+
+import { CallLLM, Prompts } from './llamaCall.js'
+
 // import ecdict from './ecdict/ecdict.json' assert { type: 'json' }
-const ecdict = JSON.parse(fs.readFileSync('./data/ecdict.json', 'utf-8'));
-const rootsLookup = JSON.parse(fs.readFileSync('./rootsLookup.json', 'utf-8'));
-const rootsList = JSON.parse(fs.readFileSync('./rootsList.json', 'utf-8'));
+// const ecdict = JSON.parse(fs.readFileSync('./data/ecdict.json', 'utf-8'));
 
 const app = new Hono()
 app.use('*', cors())  // 允许跨域
@@ -71,43 +72,21 @@ app.post('/add', async (c) => {
 
 // text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
 //         console.log(wor)
-app.get('/translate', (c) => {
-  // console.log(c, " c")
+app.get('/translate', async (c) => {
   let word = c.req.query('n')
-  // const roots = SplitWord(word)
-  return c.json(ecdict[word] || null)
-})
-
-app.post('/translate', async (c) => {
-  const {text} = await c.req.json()
-  const word = text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
-  const ecdictDetail = ecdict[word]
-  if (ecdictDetail) {
-    const res = rootsLookup[word]
-    if (!res) {
-      return c.json({
-        detail: ecdictDetail,
-        roots: []
-      })
+  console.log('translate', word)
+  const result = await CallLLM(
+    Prompts.translateWord(word),
+    { 
+      "temperature": 0.4,
+      "top_p": 0.9,
+      "max_tokens": 400,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
     }
-    const roots = res.split(" ")
-    return c.json({
-      detail: ecdictDetail,
-      roots: roots.map(v => {
-        const k = v.replaceAll("#", "")
-        return {
-          v,
-          k: rootsList[k]
-        }
-      })
-    })
-  }
-  else {
-    const res = await translateProxy(text, "en-zh")
-    return c.json({
-      trans: res
-    })
-  }
+  )
+  console.log(result)
+  return c.json({ result: JSON.parse(result) })
 })
 
 serve(app, (info) => {
@@ -134,3 +113,20 @@ export async function translateProxy(text, direction) {
     return { error: err.message };
   }
 }
+
+app.post('/translate', async (c) => {
+  const { text, target = '中文,学术类' } = await c.req.json()
+  const result = await CallLLM(
+    Prompts.translate(target, text),
+    { 
+      "temperature": 0.4,
+      "top_p": 0.9,
+      "max_tokens": 400,
+      "presence_penalty": 0.0,
+      "frequency_penalty": 0.0
+    }
+  )
+  console.log(result)
+
+  return c.json({ result })
+})

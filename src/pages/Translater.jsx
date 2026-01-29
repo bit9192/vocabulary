@@ -125,7 +125,17 @@ export function TranslatorCard({text}) {
     }, [text, trans])
 
     // console.log(roots, type," ds", type === 1 && roots && roots?.length)
-    // console.log(results, results?.trans, " results.trans.")
+    console.log(results, " results.trans.")
+//     {mean: '连接；关联', n: '/kəˈnek.ʃən/', roots: Array(3)}
+// mean
+// : 
+// "连接；关联"
+// n
+// : 
+// "/kəˈnek.ʃən/"
+// roots
+// : 
+// (3) [Array(2), Array(2), Array(2)]
     return (
         <Card sx={{
             padding: "2px 12px",
@@ -149,7 +159,7 @@ export function TranslatorCard({text}) {
             {
                 results ?
                 type === 0 ?
-                    <DictionaryEntry entry={results.translation || results}/>:
+                    <DictionaryEntry entry={results}/>:
                     <TextM
                         style={{
                             maxWidth: "100%",
@@ -157,25 +167,12 @@ export function TranslatorCard({text}) {
                             color: "#4e4e4e"
                         }}
                     >
-                        {results.translation || results}
+                        {results}
                     </TextM>
                 :
                 <TextM>
                     loading...
                 </TextM>
-            }
-            {
-                roots && roots?.length > 0 ?
-                <>
-                    <Divider />
-                    {
-                        roots.filter(v => v.k).map(v => {
-                            console.log(v.v, )
-                            return <div key={v.v}>{v.v} - {v.k.def}</div>
-                        })
-                    }
-                </>
-                : null
             }
         </Card>
     )
@@ -183,32 +180,12 @@ export function TranslatorCard({text}) {
 
 // 词典条目组件
 function DictionaryEntry({ entry }) {
-  // 按换行分块
-  const lines = entry.split("\n");
-
   return (
     <div style={{ fontFamily: "Arial, sans-serif", margin: "10px 0" }}>
-      {lines.map((line, index) => {
-        let style = {};
-        let onClick = null;
-
-        if (line.startsWith("*[")) {
-          style = { color: "#0066cc", fontWeight: "bold", cursor: "pointer" };
-          // 点击播放音标
-        //   onClick = () => playPronunciation(line.replace(/^\*\[|\].*$/g, ""), "en-US");
-        } else if (/^[a-z]\./.test(line)) {
-          style = { fontWeight: "bold" }; // 词性
-        } else if (line.startsWith("[")) {
-          style = { color: "green" }; // 专业领域
-        } else if (line.startsWith("(")) {
-          style = { color: "gray", fontSize: "0.9em" }; // 注释
-        }
-
-        return (
-          <div key={index} style={style}>
-            {line}
-          </div>
-        );
+      <TextM style={{display:'block', color:'#404040'}}>/{entry.n}/</TextM> 
+      <TextM style={{display:'block'}}>{entry.mean}</TextM>
+      {entry.roots.map((root, index) => {
+        return <TextS key={index} style={{display:'block', color: "#606060" }}>{root[0]} : {root[1]}</TextS>;
       })}
     </div>
   );

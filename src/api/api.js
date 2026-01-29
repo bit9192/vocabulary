@@ -16,8 +16,12 @@ export function GetAll() {
     return get('/wordList')
 }
 
-export function Translate({text} = {}) {
+export function TranslateSentence({text} = {}) {
     return post('/translate', {text})
+}
+
+export function TranslateWord({text} = {}) {
+    return get('/translate?n='+text)
 }
 
 // word list controller
