@@ -1,10 +1,11 @@
-const LLAMA_ENDPOINT = 'http://127.0.0.1:8080/v1/chat/completions'
+const LLAMA_ENDPOINT = (port = 8080) => 'http://127.0.0.1:'+port+'/v1/chat/completions'
 
 export async function CallLLM(
   messages,
   options
 ) {
-  const response = await fetch(LLAMA_ENDPOINT, {
+  console.log(options.port)
+  const response = await fetch( LLAMA_ENDPOINT(options.port), {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

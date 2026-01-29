@@ -72,21 +72,25 @@ app.post('/add', async (c) => {
 
 // text.replace(/[^\w\s\u4e00-\u9fa5]/g, '').toLocaleLowerCase().trim()
 //         console.log(wor)
+let _words = {}
 app.get('/translate', async (c) => {
   let word = c.req.query('n')
-  console.log('translate', word)
-  const result = await CallLLM(
-    Prompts.translateWord(word),
-    { 
-      "temperature": 0.4,
-      "top_p": 0.9,
-      "max_tokens": 400,
-      "presence_penalty": 0.0,
-      "frequency_penalty": 0.0
-    }
-  )
-  console.log(result)
-  return c.json({ result: JSON.parse(result) })
+  // console.log('translate', word)
+  if (!_words[word]) {
+    const result = await CallLLM(
+      Prompts.translateWord(word),
+      { 
+        "temperature": 0.4,
+        "top_p": 0.9,
+        "max_tokens": 400,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        post: 8081
+      }
+    )
+    _words[word] = ExtractJSON(result)
+  }
+  return c.json({ result: _words[word] })
 })
 
 serve(app, (info) => {
@@ -115,7 +119,7 @@ export async function translateProxy(text, direction) {
 }
 
 app.post('/translate', async (c) => {
-  const { text, target = '中文,学术类' } = await c.req.json()
+  const { text, target = '中文；篇学术语气' } = await c.req.json()
   const result = await CallLLM(
     Prompts.translate(target, text),
     { 
@@ -130,3 +134,30 @@ app.post('/translate', async (c) => {
 
   return c.json({ result })
 })
+
+
+function ExtractJSON(text) {
+  const stack = [];
+  let start = -1;
+
+  for (let i = 0; i < text.length; i++) {
+    const c = text[i];
+
+    if (c === '{') {
+      if (stack.length === 0) start = i;
+      stack.push(c);
+    } else if (c === '}') {
+      stack.pop();
+      if (stack.length === 0 && start !== -1) {
+        const jsonStr = text.slice(start, i + 1);
+        try {
+          return JSON.parse(jsonStr);
+        } catch (e) {
+          // 继续找下一个
+          start = -1;
+        }
+      }
+    }
+  }
+  throw new Error('No valid JSON found');
+}

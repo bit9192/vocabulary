@@ -39,8 +39,7 @@ export async function TranslatorReq(text) {
         const textType = Constlassify(text)
         let wor = null
         if (textType === "word") {
-          text = CleanInput(text)
-          wor = await TranslateWord({text})
+          wor = await TranslateWord({text: CleanInput(text)})
         }
         else {
           wor = await TranslateSentence({text})
